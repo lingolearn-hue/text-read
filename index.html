@@ -2,49 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>TextRead</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="theme-light">
+<body class="theme-dark">
 
   <!-- READER -->
   <section id="view-reader" class="view active">
     <header class="top-bar">
-      <button id="book-btn" class="book-title-btn">
+      <button id="book-btn" class="top-btn">
         <span id="book-label">Genesis</span>
-        <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        <svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
       </button>
-      <div class="chapter-nav">
-        <button id="prev-ch" class="nav-btn" aria-label="Previous chapter">&#8249;</button>
+      <button id="chapter-btn" class="top-btn">
         <span id="chapter-label">Chapter 1</span>
-        <button id="next-ch" class="nav-btn" aria-label="Next chapter">&#8250;</button>
+        <svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+      </button>
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="zh">中</button>
       </div>
     </header>
 
     <!-- Book picker -->
-    <div id="book-picker" class="book-picker hidden">
-      <div class="picker-inner">
-        <p class="picker-heading">Select Book</p>
-        <div id="book-list" class="book-list"></div>
+    <div id="book-picker" class="overlay-panel hidden">
+      <div class="overlay-head">
+        <span class="overlay-title">Select Book</span>
+        <button class="overlay-close" id="book-close">✕</button>
       </div>
+      <div class="tab-row">
+        <button class="tab-btn active" data-testament="OT">Old Testament</button>
+        <button class="tab-btn" data-testament="NT">New Testament</button>
+      </div>
+      <div id="book-list" class="scroll-list"></div>
+    </div>
+
+    <!-- Chapter picker -->
+    <div id="chapter-picker" class="overlay-panel hidden">
+      <div class="overlay-head">
+        <span class="overlay-title" id="chapter-picker-title">Chapters</span>
+        <button class="overlay-close" id="chapter-close">✕</button>
+      </div>
+      <div id="chapter-grid" class="chapter-grid"></div>
     </div>
 
     <main id="chapter-content" class="chapter-content"></main>
+
+    <!-- Note editor overlay -->
+    <div id="note-editor" class="modal-overlay hidden">
+      <div class="modal-sheet">
+        <p id="note-editor-ref" class="note-ref"></p>
+        <p id="note-editor-verse" class="note-verse-text"></p>
+        <textarea id="note-editor-input" class="note-input" placeholder="Write your note…" rows="4"></textarea>
+        <div class="modal-actions">
+          <button id="note-cancel" class="btn-secondary">Cancel</button>
+          <button id="note-save" class="btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- STARS -->
   <section id="view-stars" class="view">
     <div class="stars-screen">
       <div class="stars-display">
-        <div class="star-icon-big">&#9733;</div>
+        <div class="star-icon-big">★</div>
         <div id="star-count" class="star-count">0</div>
         <div class="star-label">stars counted</div>
       </div>
       <button id="star-tap" class="star-tap-btn" aria-label="Count star">
-        <span class="star-tap-icon">&#9733;</span>
+        <span class="star-tap-icon">★</span>
         <span class="star-tap-text">Tap to count</span>
       </button>
       <button id="star-reset" class="star-reset-btn">Reset</button>
@@ -58,22 +89,9 @@
     </header>
     <div id="notes-list" class="notes-list"></div>
     <div id="notes-empty" class="notes-empty hidden">
-      <div class="notes-empty-icon">&#128196;</div>
+      <div class="notes-empty-icon">📖</div>
       <p>No notes yet.</p>
-      <p class="notes-hint">Long-press any verse in the Reader to add a note.</p>
-    </div>
-
-    <!-- Note editor overlay -->
-    <div id="note-editor" class="note-editor hidden">
-      <div class="note-editor-inner">
-        <p id="note-editor-ref" class="note-ref"></p>
-        <p id="note-editor-verse" class="note-verse-text"></p>
-        <textarea id="note-editor-input" class="note-input" placeholder="Write your note…" rows="5"></textarea>
-        <div class="note-editor-actions">
-          <button id="note-cancel" class="btn-secondary">Cancel</button>
-          <button id="note-save" class="btn-primary">Save</button>
-        </div>
-      </div>
+      <p class="notes-hint">Hold any verse in the Reader to add a note.</p>
     </div>
   </section>
 
@@ -85,9 +103,9 @@
     <div class="settings-body">
       <div class="setting-group">
         <label class="setting-label">Theme</label>
-        <div class="theme-toggle">
-          <button id="theme-light" class="theme-btn active">Light</button>
-          <button id="theme-dark" class="theme-btn">Dark</button>
+        <div class="segment-control">
+          <button id="theme-light" class="seg-btn">Light</button>
+          <button id="theme-dark" class="seg-btn active">Dark</button>
         </div>
       </div>
       <div class="setting-group">
@@ -104,27 +122,19 @@
   <!-- BOTTOM NAV -->
   <nav class="bottom-nav">
     <button class="nav-item active" data-view="reader">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-      </svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
       <span>Reader</span>
     </button>
     <button class="nav-item" data-view="stars">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-      </svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
       <span>Stars</span>
     </button>
     <button class="nav-item" data-view="notes">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
-      </svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
       <span>Notes</span>
     </button>
     <button class="nav-item" data-view="settings">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-      </svg>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       <span>Settings</span>
     </button>
   </nav>
