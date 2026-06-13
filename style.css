@@ -286,6 +286,7 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
   gap: 40px;
   padding: 40px 24px;
   background: var(--star-bg);
+  overflow: hidden;
 }
 .stars-display {
   display: flex; flex-direction: column; align-items: center; gap: 6px;
@@ -447,23 +448,14 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
 
 /* ── Night sky ── */
 .night-sky {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 45%;
   display: block;
+  width: 100%;
+  height: 200px;
+  flex-shrink: 0;
+  background: #06080F;
   pointer-events: none;
-  z-index: 0;
 }
-#view-stars { position: relative; overflow: hidden; }
-.stars-screen {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 62%;
-  z-index: 1;
-  background: var(--star-bg);
-  border-radius: 20px 20px 0 0;
-}
+#view-stars { overflow: hidden; }
 
 /* ── Modal backdrop ── */
 .modal-backdrop {

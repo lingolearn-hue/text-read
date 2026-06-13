@@ -344,8 +344,9 @@ function animateStars() {
   const canvas = document.getElementById('night-sky');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const W = canvas.offsetWidth;
-  const H = canvas.offsetHeight;
+  // Use clientWidth/Height; fallback to 300x200 if not yet painted
+  const W = canvas.clientWidth || canvas.offsetWidth || 300;
+  const H = canvas.clientHeight || canvas.offsetHeight || 200;
   canvas.width = W;
   canvas.height = H;
 
@@ -413,3 +414,5 @@ document.getElementById('font-down').addEventListener('click', () => { if (state
 
 // ── Start ──
 init();
+// Start sky animation immediately (canvas is in DOM even if view hidden)
+requestAnimationFrame(() => animateStars());
