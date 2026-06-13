@@ -52,7 +52,20 @@
 
     <main id="chapter-content" class="chapter-content"></main>
 
-    <!-- Note editor overlay -->
+    <!-- Verse action sheet -->
+    <div id="verse-action-sheet" class="modal-overlay hidden">
+      <div id="vas-overlay" class="modal-backdrop"></div>
+      <div class="modal-sheet">
+        <p id="vas-ref" class="note-ref"></p>
+        <p id="vas-preview" class="note-verse-text"></p>
+        <div class="modal-actions">
+          <button id="vas-note-btn" class="btn-primary">Add note</button>
+          <button id="vas-close" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note editor -->
     <div id="note-editor" class="modal-overlay hidden">
       <div class="modal-sheet">
         <p id="note-editor-ref" class="note-ref"></p>
@@ -68,9 +81,9 @@
 
   <!-- STARS -->
   <section id="view-stars" class="view">
+    <canvas id="night-sky" class="night-sky"></canvas>
     <div class="stars-screen">
       <div class="stars-display">
-        <div class="star-icon-big">★</div>
         <div id="star-count" class="star-count">0</div>
         <div class="star-label">stars counted</div>
       </div>
@@ -91,7 +104,7 @@
     <div id="notes-empty" class="notes-empty hidden">
       <div class="notes-empty-icon">📖</div>
       <p>No notes yet.</p>
-      <p class="notes-hint">Hold any verse in the Reader to add a note.</p>
+      <p class="notes-hint">Tap any verse in the Reader to add a note.</p>
     </div>
   </section>
 
