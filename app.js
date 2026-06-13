@@ -38,7 +38,10 @@ function switchView(name) {
   state.currentView = name;
   document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === 'view-' + name));
   if (name === 'notes') renderNotes();
-  if (name === 'stars') animateStars();
+  if (name === 'stars') {
+    // Wait one frame so the view is visible and canvas has real dimensions
+    requestAnimationFrame(() => requestAnimationFrame(() => animateStars()));
+  }
 }
 
 // ── Init ──
@@ -344,9 +347,8 @@ function animateStars() {
   const canvas = document.getElementById('night-sky');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  // Use clientWidth/Height; fallback to 300x200 if not yet painted
-  const W = canvas.clientWidth || canvas.offsetWidth || 300;
-  const H = canvas.clientHeight || canvas.offsetHeight || 200;
+  const W = canvas.getBoundingClientRect().width || canvas.offsetWidth || 375;
+  const H = canvas.getBoundingClientRect().height || canvas.offsetHeight || 220;
   canvas.width = W;
   canvas.height = H;
 
@@ -414,5 +416,3 @@ document.getElementById('font-down').addEventListener('click', () => { if (state
 
 // ── Start ──
 init();
-// Start sky animation immediately (canvas is in DOM even if view hidden)
-requestAnimationFrame(() => animateStars());
