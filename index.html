@@ -150,7 +150,36 @@
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       <span>Settings</span>
     </button>
+    <button class="nav-item" data-view="whack">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="17" rx="7" ry="3"/><path d="M5 17V9a7 4 0 0 1 14 0v8"/><circle cx="12" cy="8" r="2"/></svg>
+      <span>Whack</span>
+    </button>
   </nav>
+
+  <!-- WHACK-A-MOLE -->
+  <section id="view-whack" class="view">
+    <header class="top-bar">
+      <span class="view-title">Whack-a-Mole</span>
+      <div class="wam-stats">
+        <span class="wam-stat">Score: <strong id="wam-score">0</strong></span>
+        <span class="wam-stat wam-time-stat">Time: <strong id="wam-time">30</strong>s</span>
+      </div>
+    </header>
+    <div class="wam-body">
+      <div class="wam-grid" id="wam-grid"></div>
+      <div class="wam-controls">
+        <button id="wam-start" class="btn-primary wam-start-btn">Start Game</button>
+      </div>
+      <div id="wam-overlay" class="wam-overlay hidden">
+        <div class="wam-result">
+          <div class="wam-result-title">Time's up!</div>
+          <div class="wam-result-score" id="wam-final-score">0</div>
+          <div class="wam-result-label">moles whacked</div>
+          <button id="wam-restart" class="btn-primary wam-restart-btn">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="app.js"></script>
 </body>
