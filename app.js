@@ -417,3 +417,114 @@ document.getElementById('font-down').addEventListener('click', () => { if (state
 
 // ── Start ──
 init();
+
+// ── Whack-a-Mole ──
+const WAM_HOLES = 9;
+const WAM_DURATION = 30;
+
+const wam = {
+  score: 0,
+  timeLeft: WAM_DURATION,
+  running: false,
+  moleTimer: null,
+  countdownTimer: null,
+  activeHoles: new Set(),
+};
+
+function wamInit() {
+  const grid = document.getElementById('wam-grid');
+  grid.innerHTML = '';
+  for (let i = 0; i < WAM_HOLES; i++) {
+    const hole = document.createElement('div');
+    hole.className = 'wam-hole';
+    hole.dataset.idx = i;
+    hole.innerHTML = '<span class="mole">🐭</span>';
+    hole.addEventListener('pointerdown', () => wamWhack(i));
+    grid.appendChild(hole);
+  }
+}
+
+function wamStart() {
+  if (wam.running) return;
+  wam.score = 0;
+  wam.timeLeft = WAM_DURATION;
+  wam.running = true;
+  wam.activeHoles.clear();
+  document.getElementById('wam-score').textContent = 0;
+  document.getElementById('wam-time').textContent = WAM_DURATION;
+  document.getElementById('wam-time').classList.remove('urgent');
+  document.getElementById('wam-overlay').classList.add('hidden');
+  document.getElementById('wam-start').disabled = true;
+
+  // Reset all holes
+  document.querySelectorAll('.wam-hole').forEach(h => h.classList.remove('up', 'whacked'));
+
+  wamScheduleMole();
+
+  wam.countdownTimer = setInterval(() => {
+    wam.timeLeft--;
+    const el = document.getElementById('wam-time');
+    el.textContent = wam.timeLeft;
+    if (wam.timeLeft <= 5) el.classList.add('urgent');
+    if (wam.timeLeft <= 0) wamEnd();
+  }, 1000);
+}
+
+function wamScheduleMole() {
+  if (!wam.running) return;
+  // Speed increases as time runs out
+  const elapsed = WAM_DURATION - wam.timeLeft;
+  const interval = Math.max(400, 1200 - elapsed * 18);
+  const upTime = Math.max(500, 1000 - elapsed * 10);
+
+  wam.moleTimer = setTimeout(() => {
+    // Pick a random hole not already active
+    const available = [];
+    for (let i = 0; i < WAM_HOLES; i++) {
+      if (!wam.activeHoles.has(i)) available.push(i);
+    }
+    if (available.length === 0) { wamScheduleMole(); return; }
+    const idx = available[Math.floor(Math.random() * available.length)];
+    wamPopUp(idx, upTime);
+    wamScheduleMole();
+  }, interval);
+}
+
+function wamPopUp(idx, upTime) {
+  if (!wam.running) return;
+  const hole = document.querySelector(`.wam-hole[data-idx="${idx}"]`);
+  if (!hole || hole.classList.contains('up')) return;
+  hole.classList.add('up');
+  wam.activeHoles.add(idx);
+  setTimeout(() => {
+    hole.classList.remove('up');
+    wam.activeHoles.delete(idx);
+  }, upTime);
+}
+
+function wamWhack(idx) {
+  if (!wam.running) return;
+  const hole = document.querySelector(`.wam-hole[data-idx="${idx}"]`);
+  if (!hole || !hole.classList.contains('up') || hole.classList.contains('whacked')) return;
+  hole.classList.add('whacked');
+  hole.classList.remove('up');
+  wam.activeHoles.delete(idx);
+  wam.score++;
+  document.getElementById('wam-score').textContent = wam.score;
+  setTimeout(() => hole.classList.remove('whacked'), 300);
+}
+
+function wamEnd() {
+  wam.running = false;
+  clearTimeout(wam.moleTimer);
+  clearInterval(wam.countdownTimer);
+  document.querySelectorAll('.wam-hole').forEach(h => h.classList.remove('up', 'whacked'));
+  document.getElementById('wam-final-score').textContent = wam.score;
+  document.getElementById('wam-overlay').classList.remove('hidden');
+  document.getElementById('wam-start').disabled = false;
+}
+
+document.getElementById('wam-start').addEventListener('click', wamStart);
+document.getElementById('wam-restart').addEventListener('click', wamStart);
+
+wamInit();
