@@ -528,3 +528,275 @@ document.getElementById('wam-start').addEventListener('click', wamStart);
 document.getElementById('wam-restart').addEventListener('click', wamStart);
 
 wamInit();
+
+// ── TTS ──
+
+// Method toggle
+document.querySelectorAll('.tts-method-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tts-method-btn').forEach(b => b.classList.toggle('active', b === btn));
+    const method = btn.dataset.method;
+    document.getElementById('tts-webspeech').classList.toggle('hidden', method !== 'webspeech');
+    document.getElementById('tts-kokoro').classList.toggle('hidden', method !== 'kokoro');
+  });
+});
+
+// ── Web Speech ──
+
+const WS_ASSUMED = {
+  ios: [
+    { name: 'Samantha', lang: 'en-US' },
+    { name: 'Daniel', lang: 'en-GB' },
+    { name: 'Karen', lang: 'en-AU' },
+    { name: 'Moira', lang: 'en-IE' },
+    { name: 'Rishi', lang: 'en-IN' },
+    { name: 'Nora', lang: 'nb-NO' },
+    { name: 'Helena', lang: 'de-DE' },
+    { name: 'Thomas', lang: 'fr-FR' },
+    { name: 'Monica', lang: 'es-ES' },
+    { name: 'Meijia', lang: 'zh-TW' },
+    { name: 'Tingting', lang: 'zh-CN' },
+    { name: 'Lekha', lang: 'hi-IN' },
+  ],
+  android: [
+    { name: 'Google US English', lang: 'en-US' },
+    { name: 'Google UK English Female', lang: 'en-GB' },
+    { name: 'Google UK English Male', lang: 'en-GB' },
+    { name: 'Google Deutsch', lang: 'de-DE' },
+    { name: 'Google français', lang: 'fr-FR' },
+    { name: 'Google español', lang: 'es-ES' },
+    { name: 'Google 普通话（中国大陆）', lang: 'zh-CN' },
+    { name: 'Google हिन्दी', lang: 'hi-IN' },
+    { name: 'Google 日本語', lang: 'ja-JP' },
+    { name: 'Google português do Brasil', lang: 'pt-BR' },
+  ],
+};
+
+let wsSelectedVoice = null;
+let wsPlatform = 'ios';
+let wsDetectedVoices = [];
+
+function renderVoiceList(voices) {
+  const list = document.getElementById('ws-voice-list');
+  list.innerHTML = '';
+  if (!voices.length) {
+    list.innerHTML = '<div class="tts-voice-item" style="color:var(--text-muted)">No voices found</div>';
+    return;
+  }
+  voices.forEach((v, i) => {
+    const item = document.createElement('div');
+    item.className = 'tts-voice-item' + (i === 0 ? ' active' : '');
+    item.innerHTML = `<span>${v.name}</span><span class="tts-voice-lang">${v.lang}</span>`;
+    item.addEventListener('click', () => {
+      list.querySelectorAll('.tts-voice-item').forEach(el => el.classList.remove('active'));
+      item.classList.add('active');
+      wsSelectedVoice = v;
+    });
+    if (i === 0) wsSelectedVoice = v;
+    list.appendChild(item);
+  });
+}
+
+function loadPlatformVoices(platform) {
+  if (platform === 'detected') {
+    renderVoiceList(wsDetectedVoices.map(v => ({ name: v.name, lang: v.lang, native: v })));
+  } else {
+    renderVoiceList(WS_ASSUMED[platform]);
+  }
+}
+
+// Detect real voices
+function detectVoices() {
+  const load = () => {
+    wsDetectedVoices = window.speechSynthesis.getVoices();
+    if (wsPlatform === 'detected') loadPlatformVoices('detected');
+  };
+  if (window.speechSynthesis.getVoices().length) load();
+  else window.speechSynthesis.onvoiceschanged = load;
+}
+
+document.querySelectorAll('.tts-platform-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tts-platform-btn').forEach(b => b.classList.toggle('active', b === btn));
+    wsPlatform = btn.dataset.platform;
+    loadPlatformVoices(wsPlatform);
+  });
+});
+
+document.getElementById('ws-play').addEventListener('click', () => {
+  const text = document.getElementById('ws-text').value.trim();
+  if (!text) return;
+  window.speechSynthesis.cancel();
+  const utt = new SpeechSynthesisUtterance(text);
+
+  // Try to find native voice matching selected
+  if (wsSelectedVoice) {
+    if (wsSelectedVoice.native) {
+      utt.voice = wsSelectedVoice.native;
+    } else {
+      const all = window.speechSynthesis.getVoices();
+      const match = all.find(v => v.name === wsSelectedVoice.name) ||
+                    all.find(v => v.lang.startsWith(wsSelectedVoice.lang.split('-')[0]));
+      if (match) utt.voice = match;
+      utt.lang = wsSelectedVoice.lang;
+    }
+  }
+
+  utt.onstart = () => setWsStatus('Speaking…');
+  utt.onend = () => setWsStatus('Done.');
+  utt.onerror = e => setWsStatus(`Error: ${e.error}`);
+  window.speechSynthesis.speak(utt);
+});
+
+document.getElementById('ws-stop').addEventListener('click', () => {
+  window.speechSynthesis.cancel();
+  setWsStatus('Stopped.');
+});
+
+function setWsStatus(msg) {
+  document.getElementById('ws-status').textContent = msg;
+}
+
+// ── Kokoro ──
+let kokoroDtype = 'q8';
+let kokoroTTS = null;
+let kokoroLoaded = false;
+let kokoroAudioCtx = null;
+let kokoroSource = null;
+
+document.querySelectorAll('.tts-model-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tts-model-btn').forEach(b => b.classList.toggle('active', b === btn));
+    kokoroDtype = btn.dataset.dtype;
+    kokoroLoaded = false;
+    kokoroTTS = null;
+    document.getElementById('kokoro-load').textContent = 'Load Model';
+    setKokoroStatus(`Model changed to ${kokoroDtype}. Press Load.`);
+  });
+});
+
+document.getElementById('kokoro-load').addEventListener('click', async () => {
+  if (kokoroLoaded) {
+    // Generate
+    await kokoroGenerate();
+  } else {
+    await kokoroLoad();
+  }
+});
+
+document.getElementById('kokoro-stop').addEventListener('click', () => {
+  if (kokoroSource) { try { kokoroSource.stop(); } catch(e){} kokoroSource = null; }
+  setKokoroStatus('Stopped.');
+});
+
+async function kokoroLoad() {
+  setKokoroStatus('Loading model… this may take a while on first load.');
+  showKokoroProgress(true);
+  const btn = document.getElementById('kokoro-load');
+  btn.disabled = true;
+  btn.textContent = 'Loading…';
+
+  try {
+    // Dynamically import kokoro-js via CDN
+    const { KokoroTTS } = await import('https://cdn.jsdelivr.net/npm/kokoro-js@1.2.1/dist/kokoro.mjs');
+
+    kokoroTTS = await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {
+      dtype: kokoroDtype,
+      device: 'wasm',
+      progress_callback: (progress) => {
+        if (progress.status === 'progress') {
+          const pct = Math.round((progress.loaded / progress.total) * 100);
+          document.getElementById('kokoro-progress-fill').style.width = pct + '%';
+          document.getElementById('kokoro-progress-label').textContent =
+            `${progress.file} — ${pct}%`;
+        } else if (progress.status === 'done') {
+          setKokoroStatus(`Loaded: ${progress.file}`);
+        }
+      }
+    });
+
+    kokoroLoaded = true;
+    btn.textContent = '▶ Generate';
+    btn.disabled = false;
+    document.getElementById('kokoro-stop').classList.remove('hidden');
+    showKokoroProgress(false);
+    setKokoroStatus('Model ready. Press Generate.');
+  } catch (e) {
+    btn.textContent = 'Load Model';
+    btn.disabled = false;
+    showKokoroProgress(false);
+    setKokoroStatus(`Error: ${e.message}`);
+    console.error(e);
+  }
+}
+
+async function kokoroGenerate() {
+  const text = document.getElementById('kokoro-text').value.trim();
+  const voice = document.getElementById('kokoro-voice').value;
+  if (!text || !kokoroTTS) return;
+
+  const btn = document.getElementById('kokoro-load');
+  btn.disabled = true;
+  btn.textContent = 'Generating…';
+  setKokoroStatus(`Generating with voice: ${voice}…`);
+
+  try {
+    const audio = await kokoroTTS.generate(text, { voice });
+    // audio.audio is Float32Array, audio.sampling_rate is sample rate
+    await playFloat32Audio(audio.audio, audio.sampling_rate);
+    setKokoroStatus('Playing.');
+  } catch (e) {
+    setKokoroStatus(`Error: ${e.message}`);
+    console.error(e);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '▶ Generate';
+  }
+}
+
+async function playFloat32Audio(float32, sampleRate) {
+  if (!kokoroAudioCtx) kokoroAudioCtx = new AudioContext();
+  const ctx = kokoroAudioCtx;
+  const buf = ctx.createBuffer(1, float32.length, sampleRate);
+  buf.copyToChannel(float32, 0);
+  if (kokoroSource) { try { kokoroSource.stop(); } catch(e){} }
+  kokoroSource = ctx.createBufferSource();
+  kokoroSource.buffer = buf;
+  kokoroSource.connect(ctx.destination);
+  kokoroSource.onended = () => setKokoroStatus('Done.');
+  kokoroSource.start();
+}
+
+function setKokoroStatus(msg) {
+  document.getElementById('kokoro-status').textContent = msg;
+}
+
+function showKokoroProgress(show) {
+  document.getElementById('kokoro-progress').classList.toggle('hidden', !show);
+  if (!show) {
+    document.getElementById('kokoro-progress-fill').style.width = '0%';
+    document.getElementById('kokoro-progress-label').textContent = 'Loading…';
+  }
+}
+
+// Init TTS on view switch
+const _origSwitch = switchView;
+// Patch switchView to init TTS when first opened
+let ttsInited = false;
+const origSwitchView = switchView;
+window.switchViewOrig = switchView;
+// Re-patch via nav handler already calls switchView, just detect in it:
+function ttsOnEnter() {
+  if (!ttsInited) {
+    ttsInited = true;
+    detectVoices();
+    loadPlatformVoices('ios');
+  }
+}
+
+// Hook into nav buttons for tts tab
+document.querySelectorAll('.nav-item').forEach(btn => {
+  if (btn.dataset.view === 'tts') {
+    btn.addEventListener('click', ttsOnEnter);
+  }
+});
