@@ -584,3 +584,140 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
   font-size: 14px;
   color: var(--text-muted);
 }
+
+/* ── TTS ── */
+.tts-method-toggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  overflow: hidden;
+  margin-left: auto;
+}
+.tts-method-btn {
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: background var(--transition), color var(--transition);
+}
+.tts-method-btn.active { background: var(--accent); color: #fff; }
+
+.tts-panel {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 0 16px;
+}
+.tts-panel.hidden { display: none; }
+
+.tts-section {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tts-platform-toggle, .tts-model-toggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.tts-platform-btn, .tts-model-btn {
+  flex: 1;
+  padding: 8px 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: background var(--transition), color var(--transition);
+}
+.tts-platform-btn.active, .tts-model-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.tts-voice-section { max-height: 200px; }
+.tts-voice-list {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 140px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface2);
+}
+.tts-voice-item {
+  padding: 9px 12px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background var(--transition);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.tts-voice-item:active { background: var(--accent-soft); }
+.tts-voice-item.active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.tts-voice-lang {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.tts-select {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 14px;
+  color: var(--text);
+  width: 100%;
+  outline: none;
+}
+
+.tts-controls {
+  flex-direction: row;
+  gap: 10px;
+  border-bottom: none;
+}
+.tts-play-btn { flex: 2; padding: 12px; border-radius: 8px; }
+.tts-stop-btn { flex: 1; padding: 12px; border-radius: 8px; }
+.tts-stop-btn.hidden { display: none; }
+
+.tts-status {
+  padding: 8px 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  min-height: 28px;
+}
+
+.tts-progress {
+  padding: 0 16px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tts-progress.hidden { display: none; }
+.tts-progress-bar {
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.tts-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.2s;
+}
+.tts-progress-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}
