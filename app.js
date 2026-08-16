@@ -689,15 +689,20 @@ document.getElementById('kokoro-stop').addEventListener('click', () => {
   setKokoroStatus('Stopped.');
 });
 
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
 async function kokoroLoad() {
-  setKokoroStatus('Loading model… this may take a while on first load.');
+  if (isSafari) {
+    setKokoroStatus('⚠️ Safari warning: Kokoro WASM is known to hang in Safari due to threading limitations. Chrome or Firefox recommended.');
+  } else {
+    setKokoroStatus('Loading model… this may take a while on first load.');
+  }
   showKokoroProgress(true);
   const btn = document.getElementById('kokoro-load');
   btn.disabled = true;
   btn.textContent = 'Loading…';
 
   try {
-    // Dynamically import kokoro-js via CDN (esm.sh wraps CJS→ESM)
     const { KokoroTTS } = await import('https://esm.sh/kokoro-js@1.2.1');
 
     kokoroTTS = await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {
@@ -720,7 +725,9 @@ async function kokoroLoad() {
     btn.disabled = false;
     document.getElementById('kokoro-stop').classList.remove('hidden');
     showKokoroProgress(false);
-    setKokoroStatus('Model ready. Press Generate.');
+    setKokoroStatus(isSafari
+      ? '⚠️ Loaded (Safari). Generation may hang — try a short sentence without special characters.'
+      : 'Model ready. Press Generate.');
   } catch (e) {
     btn.textContent = 'Load Model';
     btn.disabled = false;
@@ -740,12 +747,25 @@ async function kokoroGenerate() {
   btn.textContent = 'Generating…';
   setKokoroStatus(`Generating with voice: ${voice}…`);
 
+  // Race generation against a 45s timeout
+  const TIMEOUT_MS = 45000;
+  let timeoutId;
+  const timeoutPromise = new Promise((_, reject) => {
+    timeoutId = setTimeout(() => reject(new Error(
+      `Timed out after ${TIMEOUT_MS / 1000}s. ${isSafari ? 'Safari WASM threading is the likely cause — try Chrome.' : 'Try shorter text.'}`
+    )), TIMEOUT_MS);
+  });
+
   try {
-    const audio = await kokoroTTS.generate(text, { voice });
-    // audio.audio is Float32Array, audio.sampling_rate is sample rate
+    const audio = await Promise.race([
+      kokoroTTS.generate(text, { voice }),
+      timeoutPromise
+    ]);
+    clearTimeout(timeoutId);
     await playFloat32Audio(audio.audio, audio.sampling_rate);
     setKokoroStatus('Playing.');
   } catch (e) {
+    clearTimeout(timeoutId);
     setKokoroStatus(`Error: ${e.message}`);
     console.error(e);
   } finally {
