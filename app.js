@@ -697,8 +697,8 @@ async function kokoroLoad() {
   btn.textContent = 'Loading…';
 
   try {
-    // Dynamically import kokoro-js via CDN
-    const { KokoroTTS } = await import('https://cdn.jsdelivr.net/npm/kokoro-js@1.2.1/dist/kokoro.mjs');
+    // Dynamically import kokoro-js via CDN (esm.sh wraps CJS→ESM)
+    const { KokoroTTS } = await import('https://esm.sh/kokoro-js@1.2.1');
 
     kokoroTTS = await KokoroTTS.from_pretrained('onnx-community/Kokoro-82M-v1.0-ONNX', {
       dtype: kokoroDtype,
