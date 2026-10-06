@@ -820,3 +820,260 @@ document.querySelectorAll('.nav-item').forEach(btn => {
     btn.addEventListener('click', ttsOnEnter);
   }
 });
+
+// ── Yi Jing Oracle ──
+let HEXAGRAMS_DATA = null;
+let yjLines = [];       // array of 6 values: 6=old-yin,7=young-yang,8=young-yin,9=old-yang
+let yjCurrentLine = 0;  // 0-5, bottom to top
+
+async function loadHexagrams() {
+  if (HEXAGRAMS_DATA) return;
+  const res = await fetch('data/hexagrams.json');
+  HEXAGRAMS_DATA = await res.json();
+}
+
+// Build binary->hexagram lookup
+function getHexByBinary(bin) {
+  return HEXAGRAMS_DATA.find(h => h.binary === bin);
+}
+
+function yjReset() {
+  yjLines = [];
+  yjCurrentLine = 0;
+  // Reset slots
+  for (let i = 0; i < 6; i++) {
+    const slot = document.getElementById(`yj-slot-${i}`);
+    slot.className = 'yj-line-slot pending';
+  }
+  document.getElementById('yj-toss-label').textContent = 'Tap the coins to cast line 1';
+  document.getElementById('yj-toss-btn').disabled = false;
+  // Reset coins
+  ['yj-coin-0','yj-coin-1','yj-coin-2'].forEach(id => {
+    const c = document.getElementById(id);
+    c.className = 'yj-coin';
+    c.querySelector('.yj-coin-face').textContent = '☯';
+  });
+  document.getElementById('yj-casting').classList.remove('hidden');
+  document.getElementById('yj-reading').classList.add('hidden');
+}
+
+function tossCoin() {
+  return Math.random() < 0.5 ? 3 : 2; // heads=3, tails=2
+}
+
+function lineValue(c1, c2, c3) {
+  const sum = c1 + c2 + c3;
+  // 6=old yin(moving), 7=young yang, 8=young yin, 9=old yang(moving)
+  return sum; // 6,7,8,9
+}
+
+function isYang(v) { return v === 7 || v === 9; }
+function isMoving(v) { return v === 6 || v === 9; }
+
+function lineClass(v, mini=false) {
+  const yang = isYang(v), moving = isMoving(v);
+  if (yang && moving) return 'yang-moving';
+  if (yang) return 'yang';
+  if (!yang && moving) return 'yin-moving';
+  return 'yin';
+}
+
+document.getElementById('yj-toss-btn').addEventListener('click', async () => {
+  if (yjCurrentLine >= 6) return;
+  await loadHexagrams();
+
+  const btn = document.getElementById('yj-toss-btn');
+  btn.disabled = true;
+
+  // Toss 3 coins with animation
+  const coinIds = ['yj-coin-0','yj-coin-1','yj-coin-2'];
+  const coinEls = coinIds.map(id => document.getElementById(id));
+  const values = [tossCoin(), tossCoin(), tossCoin()];
+
+  // Start flip animation
+  coinEls.forEach(c => c.classList.add('flipping'));
+
+  await new Promise(r => setTimeout(r, 420));
+
+  coinEls.forEach((c, i) => {
+    c.classList.remove('flipping');
+    const heads = values[i] === 3;
+    c.classList.add(heads ? 'heads' : 'tails');
+    c.querySelector('.yj-coin-face').textContent = heads ? '陽' : '陰';
+  });
+
+  const val = lineValue(values[0], values[1], values[2]);
+  yjLines.push(val);
+
+  // Update slot (slot-0 = line 1 = bottom)
+  const slot = document.getElementById(`yj-slot-${yjCurrentLine}`);
+  slot.className = 'yj-line-slot ' + lineClass(val);
+
+  yjCurrentLine++;
+
+  if (yjCurrentLine < 6) {
+    document.getElementById('yj-toss-label').textContent =
+      `Tap the coins to cast line ${yjCurrentLine + 1}`;
+    // Reset coins after brief pause
+    setTimeout(() => {
+      coinEls.forEach(c => {
+        c.className = 'yj-coin';
+        c.querySelector('.yj-coin-face').textContent = '☯';
+      });
+      btn.disabled = false;
+    }, 600);
+  } else {
+    document.getElementById('yj-toss-label').textContent = 'Hexagram complete';
+    setTimeout(() => showReading(), 700);
+  }
+});
+
+function buildBinary(lines, transformed=false) {
+  // lines[0]=line1(bottom)..lines[5]=line6(top)
+  // binary: lines[0]..lines[5] as bits (0=yin,1=yang)
+  return lines.map((v, i) => {
+    let yang = isYang(v);
+    if (transformed && isMoving(v)) yang = !yang;
+    return yang ? '1' : '0';
+  }).join('');
+}
+
+function showReading() {
+  const primaryBin = buildBinary(yjLines);
+  const primaryHex = getHexByBinary(primaryBin);
+
+  const hasChanging = yjLines.some(isMoving);
+  let secondaryHex = null;
+  if (hasChanging) {
+    const secondaryBin = buildBinary(yjLines, true);
+    secondaryHex = getHexByBinary(secondaryBin);
+  }
+
+  // Render hexagram display cards
+  renderMiniHex('primary', primaryHex, yjLines, false);
+  if (secondaryHex) {
+    renderMiniHex('secondary', secondaryHex, yjLines, true);
+    document.getElementById('yj-secondary-card').classList.remove('hidden');
+    document.getElementById('yj-transform-arrow').style.display = '';
+  } else {
+    document.getElementById('yj-secondary-card').classList.add('hidden');
+    document.getElementById('yj-transform-arrow').style.display = 'none';
+  }
+
+  // Build content sections — revealed step by step
+  const content = document.getElementById('yj-content');
+  content.innerHTML = '';
+
+  // 1. Primary hexagram
+  addSection(content, `${primaryHex.num}. ${primaryHex.en} (${primaryHex.zh})`, null, 'heading');
+  addSection(content, 'Judgment', primaryHex.judgment);
+  addSection(content, 'Image', primaryHex.image);
+
+  // 2. Changing lines (collapsible)
+  const changingLines = yjLines
+    .map((v, i) => ({ v, i }))
+    .filter(({ v }) => isMoving(v));
+
+  if (changingLines.length > 0) {
+    const sec = document.createElement('div');
+    sec.className = 'yj-section';
+    const title = document.createElement('div');
+    title.className = 'yj-section-title';
+    title.textContent = 'Changing Lines';
+    sec.appendChild(title);
+
+    changingLines.forEach(({ v, i }) => {
+      const lineData = primaryHex.lines[i];
+      const row = document.createElement('div');
+      row.className = 'yj-changing-line';
+      row.innerHTML = `
+        <div class="yj-changing-line-header">
+          <span class="yj-changing-line-name">${lineData[0]}</span>
+          <span class="yj-changing-line-caret">▶</span>
+        </div>
+        <div class="yj-changing-line-text">${lineData[1]}</div>`;
+      row.addEventListener('click', () => row.classList.toggle('open'));
+      sec.appendChild(row);
+    });
+    content.appendChild(sec);
+  }
+
+  // 3. Transformed hexagram
+  if (secondaryHex) {
+    addSection(content, `Transforms to: ${secondaryHex.num}. ${secondaryHex.en} (${secondaryHex.zh})`, null, 'heading');
+    addSection(content, 'Judgment', secondaryHex.judgment);
+    addSection(content, 'Image', secondaryHex.image);
+  } else {
+    addSection(content, 'No changing lines', 'The hexagram is stable — no transformation.', null);
+  }
+
+  document.getElementById('yj-casting').classList.add('hidden');
+  document.getElementById('yj-reading').classList.remove('hidden');
+}
+
+function addSection(parent, title, text, type) {
+  const sec = document.createElement('div');
+  sec.className = 'yj-section';
+  if (type === 'heading') {
+    const t = document.createElement('div');
+    t.className = 'yj-section-title';
+    t.textContent = title;
+    sec.appendChild(t);
+    if (text) {
+      const p = document.createElement('div');
+      p.className = 'yj-section-text';
+      p.textContent = text;
+      sec.appendChild(p);
+    }
+  } else {
+    const t = document.createElement('div');
+    t.className = 'yj-section-title';
+    t.textContent = title;
+    const p = document.createElement('div');
+    p.className = 'yj-section-text';
+    p.textContent = text;
+    sec.appendChild(t);
+    sec.appendChild(p);
+  }
+  parent.appendChild(sec);
+}
+
+function renderMiniHex(side, hex, lines, transformed) {
+  const linesEl = document.getElementById(`yj-${side}-lines`);
+  linesEl.innerHTML = '';
+  // lines[5]=top line, render top-to-bottom
+  for (let i = 5; i >= 0; i--) {
+    const div = document.createElement('div');
+    div.className = 'yj-mini-line';
+    if (side === 'primary') {
+      div.classList.add(lineClass(lines[i]));
+    } else {
+      // transformed: moving lines flip
+      const v = lines[i];
+      if (isMoving(v)) {
+        div.classList.add(isYang(v) ? 'yin' : 'yang');
+      } else {
+        div.classList.add(lineClass(v));
+      }
+    }
+    linesEl.appendChild(div);
+  }
+  document.getElementById(`yj-${side}-name`).textContent = hex.en;
+  document.getElementById(`yj-${side}-zh`).textContent = hex.zh;
+}
+
+document.getElementById('yj-new-btn').addEventListener('click', yjReset);
+
+// Init oracle when view opens
+let oracleInited = false;
+document.querySelectorAll('.nav-item').forEach(btn => {
+  if (btn.dataset.view === 'oracle') {
+    btn.addEventListener('click', async () => {
+      if (!oracleInited) {
+        oracleInited = true;
+        await loadHexagrams();
+        yjReset();
+      }
+    });
+  }
+});
