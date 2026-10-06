@@ -936,3 +936,34 @@ button { cursor: pointer; border: none; background: none; color: inherit; font: 
   border-top: 1px solid var(--border);
 }
 .yj-new-btn { width: 100%; padding: 12px; border-radius: 8px; }
+
+/* ── Yi Jing two-column reading ── */
+.yj-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 100%;
+}
+.yj-col {
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+.yj-col:last-child { border-right: none; }
+
+.yj-section-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+.yj-hex-zh-inline {
+  font-size: 20px;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+/* Ensure secondary card slot always reserves space */
+#yj-secondary-card { min-width: 80px; }
