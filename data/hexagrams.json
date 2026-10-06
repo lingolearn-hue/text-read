@@ -1,0 +1,2562 @@
+[
+  {
+    "num": 1,
+    "zh": "乾",
+    "en": "The Creative",
+    "upper": "qian",
+    "lower": "qian",
+    "judgment": "The Creative works sublime success, furthering through perseverance.",
+    "image": "Heaven moves with great power. The superior man makes himself strong and untiring.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Hidden dragon. Do not act."
+      ],
+      [
+        "Nine in the second place",
+        "Dragon appearing in the field. It furthers one to see the great man."
+      ],
+      [
+        "Nine in the third place",
+        "All day long the superior man is creatively active. At nightfall his mind is still beset with cares. Danger. No blame."
+      ],
+      [
+        "Nine in the fourth place",
+        "Wavering flight over the depths. No blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "Flying dragon in the heavens. It furthers one to see the great man."
+      ],
+      [
+        "Nine at the top",
+        "Arrogant dragon will have cause to repent."
+      ]
+    ],
+    "binary": "111111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☰",
+    "upper_name": "Heaven",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 2,
+    "zh": "坤",
+    "en": "The Receptive",
+    "upper": "kun",
+    "lower": "kun",
+    "judgment": "The Receptive brings about sublime success, furthering through the perseverance of a mare. If the superior man undertakes something and tries to lead, he goes astray; but if he follows, he finds guidance.",
+    "image": "The earth's condition is receptive devotion. The superior man who has breadth of character carries the outer world.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "When there is hoarfrost underfoot, solid ice is not far off."
+      ],
+      [
+        "Six in the second place",
+        "Straight, square, great. Without purpose, yet nothing remains unfurthered."
+      ],
+      [
+        "Six in the third place",
+        "Hidden lines. One is able to remain persevering. If by chance you are in the service of a king, seek not works, but bring to completion."
+      ],
+      [
+        "Six in the fourth place",
+        "A tied-up sack. No blame, no praise."
+      ],
+      [
+        "Six in the fifth place",
+        "A yellow lower garment brings supreme good fortune."
+      ],
+      [
+        "Six at the top",
+        "Dragons fight in the meadow. Their blood is black and yellow."
+      ]
+    ],
+    "binary": "000000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☷",
+    "upper_name": "Earth",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 3,
+    "zh": "屯",
+    "en": "Difficulty at the Beginning",
+    "upper": "kan",
+    "lower": "zhen",
+    "judgment": "Difficulty at the Beginning works supreme success, furthering through perseverance. Nothing should be undertaken. It furthers one to appoint helpers.",
+    "image": "Clouds and thunder. The superior man brings order out of confusion.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Hesitation and hindrance. It furthers one to remain persevering. It furthers one to appoint helpers."
+      ],
+      [
+        "Six in the second place",
+        "Difficulties pile up. Horse and wagon part. He is not a robber; he wants to woo when the time comes. The maiden is chaste, she does not pledge herself. Ten years—then she pledges herself."
+      ],
+      [
+        "Six in the third place",
+        "Whoever hunts deer without the forester only loses his way in the forest. The superior man understands the signs of the time and prefers to desist. To go on brings humiliation."
+      ],
+      [
+        "Six in the fourth place",
+        "Horse and wagon part. Strive for union. To go brings good fortune. Everything acts to further."
+      ],
+      [
+        "Nine in the fifth place",
+        "Difficulties in blessing. A little perseverance brings good fortune. Great perseverance brings misfortune."
+      ],
+      [
+        "Six at the top",
+        "Horse and wagon part. Bloody tears flow."
+      ]
+    ],
+    "binary": "100010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☳",
+    "upper_name": "Water",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 4,
+    "zh": "蒙",
+    "en": "Youthful Folly",
+    "upper": "gen",
+    "lower": "kan",
+    "judgment": "Youthful Folly has success. It is not I who seek the young fool; the young fool seeks me. At the first oracle I inform him. If he asks two or three times, it is importunity. If he importunes, I give him no information. Perseverance furthers.",
+    "image": "A spring wells up at the foot of the mountain. The superior man fosters his character by thoroughness in all that he does.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "To make a fool develop it furthers one to apply discipline. The fetters should be removed. To go on in this way brings humiliation."
+      ],
+      [
+        "Nine in the second place",
+        "To bear with fools in kindliness brings good fortune. To know how to take women brings good fortune. The son is capable of taking charge of the household."
+      ],
+      [
+        "Six in the third place",
+        "Take not a maiden who, when she sees a man of bronze, loses possession of herself. Nothing furthers."
+      ],
+      [
+        "Six in the fourth place",
+        "Entangled folly brings humiliation."
+      ],
+      [
+        "Six in the fifth place",
+        "Childlike folly brings good fortune."
+      ],
+      [
+        "Nine at the top",
+        "In punishing folly it does not further one to commit transgressions. The only thing that furthers is to prevent transgressions."
+      ]
+    ],
+    "binary": "010001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☵",
+    "upper_name": "Mountain",
+    "lower_name": "Water"
+  },
+  {
+    "num": 5,
+    "zh": "需",
+    "en": "Waiting",
+    "upper": "kan",
+    "lower": "qian",
+    "judgment": "Waiting. If you are sincere, you have light and success. Perseverance brings good fortune. It furthers one to cross the great water.",
+    "image": "Clouds rise up to heaven. The superior man eats and drinks, is joyous and of good cheer.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Waiting in the meadow. It furthers one to abide in what endures. No blame."
+      ],
+      [
+        "Nine in the second place",
+        "Waiting on the sand. There is some gossip. The end brings good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "Waiting in the mud brings about the arrival of the enemy."
+      ],
+      [
+        "Six in the fourth place",
+        "Waiting in blood. Get out of the pit."
+      ],
+      [
+        "Nine in the fifth place",
+        "Waiting at meat and drink. Perseverance brings good fortune."
+      ],
+      [
+        "Six at the top",
+        "One falls into the pit. Three uninvited guests arrive. Honor them, and in the end there will be good fortune."
+      ]
+    ],
+    "binary": "111010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☰",
+    "upper_name": "Water",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 6,
+    "zh": "訟",
+    "en": "Conflict",
+    "upper": "qian",
+    "lower": "kan",
+    "judgment": "Conflict. You are sincere and are being obstructed. A cautious halt halfway brings good fortune. Going through to the end brings misfortune. It furthers one to see the great man. It does not further one to cross the great water.",
+    "image": "Heaven and water go their opposite ways. The superior man, in all his transactions, carefully considers the beginning.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "If one does not perpetuate the affair, there is a little gossip. In the end, good fortune comes."
+      ],
+      [
+        "Nine in the second place",
+        "One cannot engage in conflict; one returns home, gives way. The people of his town, three hundred households, remain free of guilt."
+      ],
+      [
+        "Six in the third place",
+        "To nourish oneself on ancient virtue induces perseverance. Danger. In the end, good fortune comes. If by chance you are in the service of a king, seek not works."
+      ],
+      [
+        "Nine in the fourth place",
+        "One cannot engage in conflict. One turns back and submits to fate, changes one's attitude, and finds peace in perseverance. Good fortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "To contend before him brings supreme good fortune."
+      ],
+      [
+        "Nine at the top",
+        "Even if by chance a leather belt is bestowed on one, by the end of a morning it will have been snatched away three times."
+      ]
+    ],
+    "binary": "010111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☵",
+    "upper_name": "Heaven",
+    "lower_name": "Water"
+  },
+  {
+    "num": 7,
+    "zh": "師",
+    "en": "The Army",
+    "upper": "kun",
+    "lower": "kan",
+    "judgment": "The Army. The army needs perseverance and a strong man. Good fortune without blame.",
+    "image": "In the middle of the earth is water. The superior man increases his masses by generosity toward the people.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "An army must set forth in proper order. If the order is not good, misfortune threatens."
+      ],
+      [
+        "Nine in the second place",
+        "In the midst of the army. Good fortune. No blame. The king bestows a triple decoration."
+      ],
+      [
+        "Six in the third place",
+        "Perchance the army carries corpses in the wagon. Misfortune."
+      ],
+      [
+        "Six in the fourth place",
+        "The army retreats. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "There is game in the field. It furthers one to catch it. Without blame. Let the eldest lead the army. The younger transports corpses; then perseverance brings misfortune."
+      ],
+      [
+        "Six at the top",
+        "The great prince issues commands, founds states, vests families with fiefs. Inferior people should not be employed."
+      ]
+    ],
+    "binary": "010000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☵",
+    "upper_name": "Earth",
+    "lower_name": "Water"
+  },
+  {
+    "num": 8,
+    "zh": "比",
+    "en": "Holding Together",
+    "upper": "kan",
+    "lower": "kun",
+    "judgment": "Holding Together brings good fortune. Inquire of the oracle once again whether you possess sublimity, constancy, and perseverance; then there is no blame. Those who are uncertain gradually join. Whoever comes too late meets with misfortune.",
+    "image": "On the earth is water. The kings of antiquity bestowed the different states as fiefs and cultivated friendly relations with the feudal lords.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Hold to him in truth and loyalty; this is without blame. Truth, like a full earthen bowl: thus in the end good fortune comes from without."
+      ],
+      [
+        "Six in the second place",
+        "Hold to him inwardly. Perseverance brings good fortune."
+      ],
+      [
+        "Six in the third place",
+        "You hold together with the wrong people."
+      ],
+      [
+        "Six in the fourth place",
+        "Hold to him outwardly also. Perseverance brings good fortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "Manifestation of holding together. In the hunt the king uses beaters on three sides only and foregoes game that runs off in front. The citizens need no warning. Good fortune."
+      ],
+      [
+        "Six at the top",
+        "He finds no head for holding together. Misfortune."
+      ]
+    ],
+    "binary": "000010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☷",
+    "upper_name": "Water",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 9,
+    "zh": "小畜",
+    "en": "The Taming Power of the Small",
+    "upper": "xun",
+    "lower": "qian",
+    "judgment": "The Taming Power of the Small has success. Dense clouds, no rain from our western region.",
+    "image": "The wind drives across heaven. The superior man refines the outward aspect of his nature.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Return to the way. How could there be blame in this? Good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "He allows himself to be drawn into returning. Good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "The spokes burst out of the wagon wheels. Man and wife roll their eyes."
+      ],
+      [
+        "Six in the fourth place",
+        "If you are sincere, blood vanishes and fear gives way. No blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "If you are sincere and loyally attached, you are rich in your neighbor."
+      ],
+      [
+        "Nine at the top",
+        "The rain comes, there is rest. This is due to the lasting effect of character. Perseverance on the part of the woman brings danger. The moon is nearly full. If the superior man persists, misfortune comes."
+      ]
+    ],
+    "binary": "111110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☰",
+    "upper_name": "Wind",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 10,
+    "zh": "履",
+    "en": "Treading",
+    "upper": "qian",
+    "lower": "dui",
+    "judgment": "Treading upon the tail of the tiger. It does not bite the man. Success.",
+    "image": "Heaven above, the lake below. The superior man discriminates between high and low and thereby fortifies the thinking of the people.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Simple conduct. Progress without blame."
+      ],
+      [
+        "Nine in the second place",
+        "Treading a smooth, level course. The perseverance of a dark man brings good fortune."
+      ],
+      [
+        "Six in the third place",
+        "A one-eyed man is able to see, a lame man is able to tread. He treads on the tail of the tiger. The tiger bites the man. Misfortune. Thus does a warrior act on behalf of his great prince."
+      ],
+      [
+        "Nine in the fourth place",
+        "He treads on the tail of the tiger. Caution and circumspection lead ultimately to good fortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "Resolute conduct. Perseverance with awareness of danger."
+      ],
+      [
+        "Nine at the top",
+        "Look to your conduct and weigh the favorable signs. When everything is fulfilled, supreme good fortune comes."
+      ]
+    ],
+    "binary": "011111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☱",
+    "upper_name": "Heaven",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 11,
+    "zh": "泰",
+    "en": "Peace",
+    "upper": "kun",
+    "lower": "qian",
+    "judgment": "Peace. The small departs, the great approaches. Good fortune. Success.",
+    "image": "Heaven and earth unite: Peace. The ruler divides and completes the course of heaven and earth, and so aids the people.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "When ribbon grass is pulled up, the sod comes with it. Each according to his kind. Undertakings bring good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "Bearing with the uncultured in gentleness, fording the river with resolution, not neglecting what is distant, not regarding one's companions: thus one may manage to walk in the middle."
+      ],
+      [
+        "Nine in the third place",
+        "No plain not followed by a slope. No going not followed by a return. He who remains persevering in danger is without blame. Do not complain about this truth; enjoy the good fortune you still possess."
+      ],
+      [
+        "Six in the fourth place",
+        "He flutters down, not boasting of his wealth, together with his neighbor, guileless and sincere."
+      ],
+      [
+        "Six in the fifth place",
+        "The sovereign I gives his daughter in marriage. This brings blessing and supreme good fortune."
+      ],
+      [
+        "Six at the top",
+        "The wall falls back into the moat. Use no army now. Make your commands known within your own town. Perseverance brings humiliation."
+      ]
+    ],
+    "binary": "111000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☰",
+    "upper_name": "Earth",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 12,
+    "zh": "否",
+    "en": "Standstill",
+    "upper": "qian",
+    "lower": "kun",
+    "judgment": "Standstill. Evil people do not further the perseverance of the superior man. The great departs; the small approaches.",
+    "image": "Heaven and earth do not unite: Standstill. The superior man falls back upon his inner worth in order to escape the difficulties.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "When ribbon grass is pulled up, the sod comes with it. Each according to his kind. Perseverance brings good fortune and success."
+      ],
+      [
+        "Six in the second place",
+        "They bear and endure; this means good fortune for inferior people. The standstill serves to help the great man to attain success."
+      ],
+      [
+        "Six in the third place",
+        "They bear shame."
+      ],
+      [
+        "Nine in the fourth place",
+        "He who acts at the command of the highest remains without blame. Those of like mind partake of the blessing."
+      ],
+      [
+        "Nine in the fifth place",
+        "Standstill is giving way. Good fortune for the great man. What if it should fail, what if it should fail? In this way he ties it to a cluster of mulberry shoots."
+      ],
+      [
+        "Nine at the top",
+        "The standstill comes to an end. First standstill, then good fortune."
+      ]
+    ],
+    "binary": "000111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☷",
+    "upper_name": "Heaven",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 13,
+    "zh": "同人",
+    "en": "Fellowship with Men",
+    "upper": "qian",
+    "lower": "li",
+    "judgment": "Fellowship with Men in the open. Success. It furthers one to cross the great water. The perseverance of the superior man furthers.",
+    "image": "Heaven together with fire. The superior man organizes the clans and makes distinctions between things.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Fellowship with men at the gate. No blame."
+      ],
+      [
+        "Six in the second place",
+        "Fellowship with men in the clan. Humiliation."
+      ],
+      [
+        "Nine in the third place",
+        "He hides weapons in the thicket; he climbs the high hill in front of it. For three years he does not rise up."
+      ],
+      [
+        "Nine in the fourth place",
+        "He climbs up on his wall; he cannot attack. Good fortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "Men bound in fellowship first weep and lament, but afterward they laugh. After great struggles they succeed in meeting."
+      ],
+      [
+        "Nine at the top",
+        "Fellowship with men in the meadow. No remorse."
+      ]
+    ],
+    "binary": "101111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☲",
+    "upper_name": "Heaven",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 14,
+    "zh": "大有",
+    "en": "Possession in Great Measure",
+    "upper": "li",
+    "lower": "qian",
+    "judgment": "Possession in Great Measure. Supreme success.",
+    "image": "Fire in heaven above. The superior man curbs evil and furthers good, and thereby obeys the benevolent will of heaven.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "No relationship with what is harmful; there is no blame in this. If one remains conscious of difficulty, one remains without blame."
+      ],
+      [
+        "Nine in the second place",
+        "A big wagon for loading. One may undertake something. No blame."
+      ],
+      [
+        "Nine in the third place",
+        "A prince offers it to the Son of Heaven. A petty man cannot do this."
+      ],
+      [
+        "Nine in the fourth place",
+        "He makes a difference between himself and his neighbor. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "He whose truth is accessible, yet dignified, has good fortune."
+      ],
+      [
+        "Nine at the top",
+        "He is blessed by heaven. Good fortune. Nothing that does not further."
+      ]
+    ],
+    "binary": "111101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☰",
+    "upper_name": "Fire",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 15,
+    "zh": "謙",
+    "en": "Modesty",
+    "upper": "kun",
+    "lower": "gen",
+    "judgment": "Modesty creates success. The superior man carries things through.",
+    "image": "Within the earth, a mountain. The superior man reduces that which is too much, and augments that which is too little. He weighs things and makes them equal.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "A superior man modest about his modesty may cross the great water. Good fortune."
+      ],
+      [
+        "Six in the second place",
+        "Modesty that comes to expression. Perseverance brings good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "A superior man of merit, modest to the end. Good fortune."
+      ],
+      [
+        "Six in the fourth place",
+        "Nothing that would not further modesty in movement."
+      ],
+      [
+        "Six in the fifth place",
+        "No boasting of wealth before one's neighbor. It is favorable to attack with force. Nothing that would not further."
+      ],
+      [
+        "Six at the top",
+        "Modesty that comes to expression. It is favorable to set armies marching to chastise one's own city and one's country."
+      ]
+    ],
+    "binary": "001000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☶",
+    "upper_name": "Earth",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 16,
+    "zh": "豫",
+    "en": "Enthusiasm",
+    "upper": "zhen",
+    "lower": "kun",
+    "judgment": "Enthusiasm. It furthers one to install helpers and to set armies marching.",
+    "image": "Thunder comes resounding out of the earth. The superior man, in accordance with this, composes music in order to honor merit and offers it with splendor to the Supreme Deity, inviting his ancestors to be present.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Enthusiasm that expresses itself brings misfortune."
+      ],
+      [
+        "Six in the second place",
+        "Firm as a rock. Not a whole day. Perseverance brings good fortune."
+      ],
+      [
+        "Six in the third place",
+        "Enthusiasm that looks upward creates remorse. Hesitation brings remorse."
+      ],
+      [
+        "Nine in the fourth place",
+        "The source of enthusiasm. He achieves great things. Doubt not. You gather friends around you as a hair clasp gathers the hair."
+      ],
+      [
+        "Six in the fifth place",
+        "Persistently ill, and still does not die."
+      ],
+      [
+        "Six at the top",
+        "Deluded enthusiasm. But if after completion one changes, there is no blame."
+      ]
+    ],
+    "binary": "000100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☷",
+    "upper_name": "Thunder",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 17,
+    "zh": "隨",
+    "en": "Following",
+    "upper": "dui",
+    "lower": "zhen",
+    "judgment": "Following has supreme success. Perseverance furthers. No blame.",
+    "image": "Thunder in the middle of the lake. The superior man at nightfall goes indoors for rest and recuperation.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "The standard is changing. Perseverance brings good fortune. To go out of the door in company produces deeds."
+      ],
+      [
+        "Six in the second place",
+        "If one clings to the little boy, one loses the strong man."
+      ],
+      [
+        "Six in the third place",
+        "If one clings to the strong man, one loses the little boy. Through following one finds what one seeks. It furthers one to remain persevering."
+      ],
+      [
+        "Nine in the fourth place",
+        "Following creates success. Perseverance brings misfortune. To go one's way with sincerity brings clarity. How could there be blame in this?"
+      ],
+      [
+        "Nine in the fifth place",
+        "Sincere in the good. Good fortune."
+      ],
+      [
+        "Six at the top",
+        "He meets with firm allegiance and is still further bound. The king introduces him to the Western Mountain."
+      ]
+    ],
+    "binary": "100011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☳",
+    "upper_name": "Lake",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 18,
+    "zh": "蠱",
+    "en": "Work on What Has Been Spoiled",
+    "upper": "gen",
+    "lower": "xun",
+    "judgment": "Work on what has been spoiled has supreme success. It furthers one to cross the great water. Before the starting point, three days. After the starting point, three days.",
+    "image": "The wind blows low on the mountain. The superior man stirs up the people and strengthens their spirit.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Setting right what has been spoiled by the father. If there is a son, no blame rests upon the departed father. Danger. In the end good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "Setting right what has been spoiled by the mother. One must not be too persevering."
+      ],
+      [
+        "Nine in the third place",
+        "Setting right what has been spoiled by the father. There will be a little remorse but no great blame."
+      ],
+      [
+        "Six in the fourth place",
+        "Tolerating what has been spoiled by the father. In continuing one sees humiliation."
+      ],
+      [
+        "Six in the fifth place",
+        "Setting right what has been spoiled by the father. One meets with praise."
+      ],
+      [
+        "Nine at the top",
+        "He does not serve kings and princes, sets himself higher goals."
+      ]
+    ],
+    "binary": "110001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☴",
+    "upper_name": "Mountain",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 19,
+    "zh": "臨",
+    "en": "Approach",
+    "upper": "kun",
+    "lower": "dui",
+    "judgment": "Approach has supreme success. Perseverance furthers. When the eighth month comes, there will be misfortune.",
+    "image": "The earth above the lake. The superior man is inexhaustible in his will to teach, and without limits in his tolerance and protection of the people.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Joint approach. Perseverance brings good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "Joint approach. Good fortune. Everything furthers."
+      ],
+      [
+        "Six in the third place",
+        "Comfortable approach. Nothing that would further. If one is induced to grieve over it, one becomes free of blame."
+      ],
+      [
+        "Six in the fourth place",
+        "Complete approach. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "Wise approach. This is right for a great prince. Good fortune."
+      ],
+      [
+        "Six at the top",
+        "Great-hearted approach. Good fortune. No blame."
+      ]
+    ],
+    "binary": "011000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☱",
+    "upper_name": "Earth",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 20,
+    "zh": "觀",
+    "en": "Contemplation",
+    "upper": "xun",
+    "lower": "kun",
+    "judgment": "Contemplation. The ablution has been made, but not yet the offering. Full of trust they look up to him.",
+    "image": "The wind blows over the earth. The kings of old visited the regions of the world, contemplated the people, and gave them instruction.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Boy-like contemplation. For an inferior man, no blame. For a superior man, humiliation."
+      ],
+      [
+        "Six in the second place",
+        "Contemplation through the crack of the door. Furthering for the perseverance of a woman."
+      ],
+      [
+        "Six in the third place",
+        "Contemplation of my life decides the choice between advance and retreat."
+      ],
+      [
+        "Six in the fourth place",
+        "Contemplation of the light of the kingdom. It furthers one to exert influence as the guest of a king."
+      ],
+      [
+        "Nine in the fifth place",
+        "Contemplation of my life. The superior man is without blame."
+      ],
+      [
+        "Nine at the top",
+        "Contemplation of his life. The superior man is without blame."
+      ]
+    ],
+    "binary": "000110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☷",
+    "upper_name": "Wind",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 21,
+    "zh": "噬嗑",
+    "en": "Biting Through",
+    "upper": "li",
+    "lower": "zhen",
+    "judgment": "Biting Through has success. It is favorable to let justice be administered.",
+    "image": "Thunder and lightning. The kings of former times made firm the laws through clearly defined penalties.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "His feet are fastened in the stocks, so that his toes disappear. No blame."
+      ],
+      [
+        "Six in the second place",
+        "Bites through tender meat, so that his nose disappears. No blame."
+      ],
+      [
+        "Six in the third place",
+        "Bites on old dried meat and strikes on something poisonous. Slight humiliation. No blame."
+      ],
+      [
+        "Nine in the fourth place",
+        "Bites on dried gristly meat. Receives metal arrows. It furthers one to be mindful of difficulties and to be persevering. Good fortune."
+      ],
+      [
+        "Six in the fifth place",
+        "Bites on dried lean meat. Receives yellow gold. Perseveringly aware of danger. No blame."
+      ],
+      [
+        "Nine at the top",
+        "His neck is fastened in the wooden cangue, so that his ears disappear. Misfortune."
+      ]
+    ],
+    "binary": "100101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☳",
+    "upper_name": "Fire",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 22,
+    "zh": "賁",
+    "en": "Grace",
+    "upper": "gen",
+    "lower": "li",
+    "judgment": "Grace has success. In small matters it is favorable to undertake something.",
+    "image": "Fire at the foot of the mountain. The superior man proceeds in clarifying the myriad things, but dares not decide controversial issues on the basis of such criteria alone.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "He lends grace to his toes, leaves the carriage, and walks."
+      ],
+      [
+        "Six in the second place",
+        "Lends grace to the beard on his chin."
+      ],
+      [
+        "Nine in the third place",
+        "Graceful and moist. Constant perseverance brings good fortune."
+      ],
+      [
+        "Six in the fourth place",
+        "Grace or simplicity? A white horse comes as if on wings. He is not a robber, he will woo at the right time."
+      ],
+      [
+        "Six in the fifth place",
+        "Grace in hills and gardens. The roll of silk is meager and small. Humiliation, but in the end good fortune."
+      ],
+      [
+        "Nine at the top",
+        "Simple grace. No blame."
+      ]
+    ],
+    "binary": "101001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☲",
+    "upper_name": "Mountain",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 23,
+    "zh": "剝",
+    "en": "Splitting Apart",
+    "upper": "gen",
+    "lower": "kun",
+    "judgment": "Splitting Apart. It does not further one to go anywhere.",
+    "image": "The mountain rests on the earth. Those above can ensure their position only by giving generously to those below.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "The leg of the bed is split. Those who persevere are destroyed. Misfortune."
+      ],
+      [
+        "Six in the second place",
+        "The bed is split at the edge. Those who persevere are destroyed. Misfortune."
+      ],
+      [
+        "Six in the third place",
+        "He splits with them. No blame."
+      ],
+      [
+        "Six in the fourth place",
+        "The bed is split up to the skin. Misfortune."
+      ],
+      [
+        "Six in the fifth place",
+        "A shoal of fishes. Favor comes through the court ladies. Everything acts to further."
+      ],
+      [
+        "Nine at the top",
+        "There is a large fruit still uneaten. The superior man receives a carriage. The house of the inferior man is split apart."
+      ]
+    ],
+    "binary": "000001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☷",
+    "upper_name": "Mountain",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 24,
+    "zh": "復",
+    "en": "Return",
+    "upper": "kun",
+    "lower": "zhen",
+    "judgment": "Return. Success. Going out and coming in without error. Friends come without blame. To and fro goes the way. On the seventh day comes return. It furthers one to have somewhere to go.",
+    "image": "Thunder within the earth. The kings of antiquity closed the passes at the time of the solstice. Merchants and strangers did not travel, and the ruler did not journey through the provinces.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Return from a short distance. No need for remorse. Great good fortune."
+      ],
+      [
+        "Six in the second place",
+        "Quiet return. Good fortune."
+      ],
+      [
+        "Six in the third place",
+        "Repeated return. Danger. No blame."
+      ],
+      [
+        "Six in the fourth place",
+        "Walking in the midst of others, one returns alone."
+      ],
+      [
+        "Six in the fifth place",
+        "Noblehearted return. No remorse."
+      ],
+      [
+        "Six at the top",
+        "Missing the return. Misfortune. Misfortune from within and without. If armies are set marching in this way, one will in the end suffer a great defeat, disastrous for the ruler of the country. For ten years it will not be possible to attack again."
+      ]
+    ],
+    "binary": "100000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☳",
+    "upper_name": "Earth",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 25,
+    "zh": "無妄",
+    "en": "Innocence",
+    "upper": "qian",
+    "lower": "zhen",
+    "judgment": "Innocence. Supreme success. Perseverance furthers. If someone is not as he should be, he has misfortune, and it does not further him to undertake anything.",
+    "image": "Under heaven thunder rolls: All things attain the natural state of innocence. The kings of old, rich in virtue and in harmony with the time, fostered and nourished all beings.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Innocent behavior brings good fortune."
+      ],
+      [
+        "Six in the second place",
+        "If one does not count on the harvest while plowing, nor on the use of the ground while clearing it, it furthers one to undertake something."
+      ],
+      [
+        "Six in the third place",
+        "Undeserved misfortune. The cow that was tethered by someone is the wanderer's gain, the citizen's loss."
+      ],
+      [
+        "Nine in the fourth place",
+        "He who can be persevering remains without blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "Use no medicine in an illness incurred through no fault of your own. It will pass of itself."
+      ],
+      [
+        "Nine at the top",
+        "Innocent action brings misfortune. Nothing furthers."
+      ]
+    ],
+    "binary": "100111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☳",
+    "upper_name": "Heaven",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 26,
+    "zh": "大畜",
+    "en": "The Taming Power of the Great",
+    "upper": "gen",
+    "lower": "qian",
+    "judgment": "The Taming Power of the Great. Perseverance furthers. Not eating at home brings good fortune. It furthers one to cross the great water.",
+    "image": "Heaven within the mountain. The superior man acquaints himself with many sayings of antiquity and many deeds of the past, in order to strengthen his character thereby.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Danger is at hand. It furthers one to desist."
+      ],
+      [
+        "Nine in the second place",
+        "The axletrees are taken from the wagon."
+      ],
+      [
+        "Nine in the third place",
+        "A good horse that follows others. Awareness of danger, with perseverance, furthers. Practice chariot driving and armed defense daily. It furthers one to have somewhere to go."
+      ],
+      [
+        "Six in the fourth place",
+        "The headboard of a young bull. Great good fortune."
+      ],
+      [
+        "Six in the fifth place",
+        "The tusk of a gelded boar. Good fortune."
+      ],
+      [
+        "Nine at the top",
+        "One attains the way of heaven. Success."
+      ]
+    ],
+    "binary": "111001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☰",
+    "upper_name": "Mountain",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 27,
+    "zh": "頤",
+    "en": "The Corners of the Mouth",
+    "upper": "gen",
+    "lower": "zhen",
+    "judgment": "The Corners of the Mouth. Perseverance brings good fortune. Pay heed to the providing of nourishment and to what a man seeks to fill his own mouth with.",
+    "image": "At the foot of the mountain, thunder. The superior man is careful of his words and temperate in eating and drinking.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "You let your magic tortoise go, and look at me with the corners of your mouth drooping. Misfortune."
+      ],
+      [
+        "Six in the second place",
+        "Turning to the summit for nourishment, deviating from the path to seek nourishment from the hill. Continuing to do this brings misfortune."
+      ],
+      [
+        "Six in the third place",
+        "Turning away from nourishment. Perseverance brings misfortune. Do not act thus for ten years. Nothing serves to further."
+      ],
+      [
+        "Six in the fourth place",
+        "Turning to the summit for provision of nourishment brings good fortune. Spying about with sharp eyes like a tiger with insatiable craving. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "Turning away from the path. To remain persevering brings good fortune. One should not cross the great water."
+      ],
+      [
+        "Nine at the top",
+        "The source of nourishment. Awareness of danger brings good fortune. It furthers one to cross the great water."
+      ]
+    ],
+    "binary": "100001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☳",
+    "upper_name": "Mountain",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 28,
+    "zh": "大過",
+    "en": "Preponderance of the Great",
+    "upper": "dui",
+    "lower": "xun",
+    "judgment": "Preponderance of the Great. The ridgepole sags to the breaking point. It furthers one to have somewhere to go. Success.",
+    "image": "The lake rises above the trees. The superior man, when he stands alone, is unconcerned, and if he has to renounce the world, he is undaunted.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "To spread white rushes underneath. No blame."
+      ],
+      [
+        "Nine in the second place",
+        "A dry poplar sprouts at the root. An older man takes a young wife. Everything furthers."
+      ],
+      [
+        "Nine in the third place",
+        "The ridgepole sags to the breaking point. Misfortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "The ridgepole is braced. Good fortune. If there are ulterior motives, it is humiliating."
+      ],
+      [
+        "Nine in the fifth place",
+        "A withered poplar puts forth flowers. An older woman takes a husband. No blame. No praise."
+      ],
+      [
+        "Six at the top",
+        "One must go through the water. It goes over one's head. Misfortune. No blame."
+      ]
+    ],
+    "binary": "110011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☴",
+    "upper_name": "Lake",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 29,
+    "zh": "坎",
+    "en": "The Abysmal",
+    "upper": "kan",
+    "lower": "kan",
+    "judgment": "The Abysmal repeated. If you are sincere, you have success in your heart, and whatever you do succeeds.",
+    "image": "Water flows on uninterruptedly and reaches its goal. The superior man walks in lasting virtue and carries on the business of teaching.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Repetition of the Abysmal. In the abyss one falls into a pit. Misfortune."
+      ],
+      [
+        "Nine in the second place",
+        "The abyss is dangerous. One should strive to attain small things only."
+      ],
+      [
+        "Six in the third place",
+        "Forward and backward, abyss on abyss. In danger like this, pause at first and wait, otherwise you will fall into a pit in the abyss. Do not act in this way."
+      ],
+      [
+        "Six in the fourth place",
+        "A jug of wine, a bowl of rice with it; earthen vessels simply handed in through the window. There is certainly no blame in this."
+      ],
+      [
+        "Nine in the fifth place",
+        "The abyss is not filled to overflowing, it is filled only to the rim. No blame."
+      ],
+      [
+        "Six at the top",
+        "Bound with cords and ropes, shut in between thorn-hedged prison walls: for three years one does not find the way. Misfortune."
+      ]
+    ],
+    "binary": "010010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☵",
+    "upper_name": "Water",
+    "lower_name": "Water"
+  },
+  {
+    "num": 30,
+    "zh": "離",
+    "en": "The Clinging",
+    "upper": "li",
+    "lower": "li",
+    "judgment": "The Clinging. Perseverance furthers. It brings success. Care of the cow brings good fortune.",
+    "image": "That which is bright rises twice. The great man, by perpetuating this brightness, illumines the four quarters of the world.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "The footprints run crisscross. If one is seriously intent, no blame."
+      ],
+      [
+        "Six in the second place",
+        "Yellow light. Supreme good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "In the light of the setting sun, men either beat the pot and sing or loudly bewail the approach of old age. Misfortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "Its coming is sudden; it flames up, dies down, is thrown away."
+      ],
+      [
+        "Six in the fifth place",
+        "Tears in floods, sighing and lamenting. Good fortune."
+      ],
+      [
+        "Nine at the top",
+        "The king used him to march forth and chastise. Then it is best to kill the leaders and take captive the followers. No blame."
+      ]
+    ],
+    "binary": "101101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☲",
+    "upper_name": "Fire",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 31,
+    "zh": "咸",
+    "en": "Influence",
+    "upper": "dui",
+    "lower": "gen",
+    "judgment": "Influence. Success. Perseverance furthers. To take a maiden to wife brings good fortune.",
+    "image": "A lake on the mountain. The superior man encourages people to approach him by his readiness to receive them.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "The influence shows itself in the big toe."
+      ],
+      [
+        "Six in the second place",
+        "The influence shows itself in the calves of the legs. Misfortune. Tarrying brings good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "The influence shows itself in the thighs. Holds to that which follows it. To continue is humiliating."
+      ],
+      [
+        "Nine in the fourth place",
+        "Perseverance brings good fortune. Remorse disappears. If a man is agitated in mind, and his thoughts go hither and thither, only those friends on whom he fixes his conscious thoughts will follow."
+      ],
+      [
+        "Nine in the fifth place",
+        "The influence shows itself in the back of the neck. No remorse."
+      ],
+      [
+        "Six at the top",
+        "The influence shows itself in the jaws, cheeks, and tongue."
+      ]
+    ],
+    "binary": "001011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☶",
+    "upper_name": "Lake",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 32,
+    "zh": "恆",
+    "en": "Duration",
+    "upper": "zhen",
+    "lower": "xun",
+    "judgment": "Duration. Success. No blame. Perseverance furthers. It furthers one to have somewhere to go.",
+    "image": "Thunder and wind. The superior man stands firm and does not change his direction.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Seeking duration too hastily brings misfortune persistently. Nothing that would further."
+      ],
+      [
+        "Nine in the second place",
+        "Remorse disappears."
+      ],
+      [
+        "Nine in the third place",
+        "He who does not give duration to his character meets with disgrace. Persistent humiliation."
+      ],
+      [
+        "Nine in the fourth place",
+        "No game in the field."
+      ],
+      [
+        "Six in the fifth place",
+        "Giving duration to one's character through perseverance. This is good fortune for a woman, misfortune for a man."
+      ],
+      [
+        "Six at the top",
+        "Restlessness as an enduring condition brings misfortune."
+      ]
+    ],
+    "binary": "110100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☴",
+    "upper_name": "Thunder",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 33,
+    "zh": "遯",
+    "en": "Retreat",
+    "upper": "qian",
+    "lower": "gen",
+    "judgment": "Retreat. Success. In what is small, perseverance furthers.",
+    "image": "Mountain under heaven. The superior man keeps the inferior man at a distance, not angrily but with dignity.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "At the tail in retreat. This is dangerous. One must not wish to undertake anything."
+      ],
+      [
+        "Six in the second place",
+        "He holds him fast with yellow oxhide. No one can tear him loose."
+      ],
+      [
+        "Nine in the third place",
+        "A halted retreat is nerve-wracking and dangerous. To retain people as men- and maidservants brings good fortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "Voluntary retreat brings good fortune to the superior man and downfall to the inferior man."
+      ],
+      [
+        "Nine in the fifth place",
+        "Friendly retreat. Perseverance brings good fortune."
+      ],
+      [
+        "Nine at the top",
+        "Cheerful retreat. Everything serves to further."
+      ]
+    ],
+    "binary": "001111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☶",
+    "upper_name": "Heaven",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 34,
+    "zh": "大壯",
+    "en": "The Power of the Great",
+    "upper": "zhen",
+    "lower": "qian",
+    "judgment": "The Power of the Great. Perseverance furthers.",
+    "image": "Thunder in heaven above. The superior man does not tread upon paths that do not accord with established order.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Power in the toes. Continuing brings misfortune. This is certainly true."
+      ],
+      [
+        "Nine in the second place",
+        "Perseverance brings good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "The inferior man works through power. The superior man does not act thus. To continue is dangerous. A he-goat butts against a hedge and gets his horns entangled."
+      ],
+      [
+        "Nine in the fourth place",
+        "Perseverance brings good fortune. Remorse disappears. The hedge opens; there is no entanglement. Power depends upon the axle of a big cart."
+      ],
+      [
+        "Six in the fifth place",
+        "Loses the goat with ease. No remorse."
+      ],
+      [
+        "Six at the top",
+        "A he-goat butts against a hedge. He cannot go backward, he cannot go forward. Nothing serves to further. If one notes the difficulty, this brings good fortune."
+      ]
+    ],
+    "binary": "111100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☰",
+    "upper_name": "Thunder",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 35,
+    "zh": "晉",
+    "en": "Progress",
+    "upper": "li",
+    "lower": "kun",
+    "judgment": "Progress. The powerful prince is honored with horses in large numbers. In a single day he is granted audience three times.",
+    "image": "The sun rises over the earth. The superior man himself brightens his bright virtue.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Progressing, but turned back. Perseverance brings good fortune. If one meets with no confidence, one should remain calm. No mistake."
+      ],
+      [
+        "Six in the second place",
+        "Progressing, but in sorrow. Perseverance brings good fortune. Then one obtains great happiness from one's ancestress."
+      ],
+      [
+        "Six in the third place",
+        "All are in accord. Remorse disappears."
+      ],
+      [
+        "Nine in the fourth place",
+        "Progress like a hamster. Perseverance brings danger."
+      ],
+      [
+        "Six in the fifth place",
+        "Remorse disappears. Take not gain and loss to heart. Undertakings bring good fortune. Everything serves to further."
+      ],
+      [
+        "Nine at the top",
+        "Making progress with the horns is permissible only for the purpose of punishing one's own city. To be conscious of danger brings good fortune. No blame. Perseverance brings humiliation."
+      ]
+    ],
+    "binary": "000101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☷",
+    "upper_name": "Fire",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 36,
+    "zh": "明夷",
+    "en": "Darkening of the Light",
+    "upper": "kun",
+    "lower": "li",
+    "judgment": "Darkening of the Light. In adversity it furthers one to be persevering.",
+    "image": "The light has sunk into the earth. The superior man lives with the great mass: he veils his light, yet still shines.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Darkening of the light during flight. He lowers his wings. The superior man does not eat for three days on his wanderings. But he has somewhere to go. The host has occasion to gossip about him."
+      ],
+      [
+        "Six in the second place",
+        "Darkening of the light injures him in the left thigh. He gives aid with the strength of a horse. Good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "Darkening of the light during the hunt in the south. Their great leader is captured. One must not expect perseverance too soon."
+      ],
+      [
+        "Six in the fourth place",
+        "He penetrates the left side of the belly. One gets at the very heart of the darkening of the light, and leaves gate and courtyard."
+      ],
+      [
+        "Six in the fifth place",
+        "Darkening of the light as with Prince Chi. Perseverance furthers."
+      ],
+      [
+        "Six at the top",
+        "Not light but darkness. First he climbed up to heaven, then he plunged into the depths of the earth."
+      ]
+    ],
+    "binary": "101000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☲",
+    "upper_name": "Earth",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 37,
+    "zh": "家人",
+    "en": "The Family",
+    "upper": "xun",
+    "lower": "li",
+    "judgment": "The Family. The perseverance of the woman furthers.",
+    "image": "Wind comes forth from fire. The superior man has substance in his words and duration in his way of life.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Firm seclusion within the family. Remorse disappears."
+      ],
+      [
+        "Six in the second place",
+        "She should not follow her whims. She must attend within to the food. Perseverance brings good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "When tempers flare up in the family, too great severity brings remorse. Good fortune nonetheless. When woman and child dally and laugh it leads in the end to humiliation."
+      ],
+      [
+        "Six in the fourth place",
+        "She is the treasure of the house. Great good fortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "As a king he approaches his family. Fear not. Good fortune."
+      ],
+      [
+        "Nine at the top",
+        "His work commands respect. In the end good fortune comes."
+      ]
+    ],
+    "binary": "101110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☲",
+    "upper_name": "Wind",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 38,
+    "zh": "睽",
+    "en": "Opposition",
+    "upper": "li",
+    "lower": "dui",
+    "judgment": "Opposition. In small matters, good fortune.",
+    "image": "Above, fire; below, the lake. The superior man retains his individuality even among people of different views.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Remorse disappears. If you lose your horse, do not run after it; it will come back of its own accord. When you see evil people, guard yourself against mistakes."
+      ],
+      [
+        "Nine in the second place",
+        "One meets his lord in a narrow street. No blame."
+      ],
+      [
+        "Six in the third place",
+        "One sees the wagon dragged back, the oxen halted, a man's hair and nose cut off. Not a good beginning, but a good end."
+      ],
+      [
+        "Nine in the fourth place",
+        "Isolated through opposition, one meets a like-minded man with whom one can associate in good faith. Despite the danger, no blame."
+      ],
+      [
+        "Six in the fifth place",
+        "Remorse disappears. The companion bites his way through the wrappings. If one goes to him, how could it be a mistake?"
+      ],
+      [
+        "Nine at the top",
+        "Isolated through opposition, one sees one's companion as a pig covered with dirt, as a wagon full of devils. First one draws a bow against him, then one lays the bow aside. He is not a robber; he will woo at the right time. As one goes, rain falls; then good fortune comes."
+      ]
+    ],
+    "binary": "011101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☱",
+    "upper_name": "Fire",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 39,
+    "zh": "蹇",
+    "en": "Obstruction",
+    "upper": "kan",
+    "lower": "gen",
+    "judgment": "Obstruction. The southwest furthers. The northeast does not further. It furthers one to see the great man. Perseverance brings good fortune.",
+    "image": "Water on the mountain. The superior man turns his attention to himself and molds his character.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Going leads to obstructions, coming meets with praise."
+      ],
+      [
+        "Six in the second place",
+        "The king's servant is beset by obstruction upon obstruction, but it is not his own fault."
+      ],
+      [
+        "Nine in the third place",
+        "Going leads to obstructions; hence he comes back."
+      ],
+      [
+        "Six in the fourth place",
+        "Going leads to obstructions, coming leads to union."
+      ],
+      [
+        "Nine in the fifth place",
+        "In the midst of the greatest obstructions, friends come."
+      ],
+      [
+        "Six at the top",
+        "Going leads to obstructions, coming leads to great good fortune. It furthers one to see the great man."
+      ]
+    ],
+    "binary": "001010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☶",
+    "upper_name": "Water",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 40,
+    "zh": "解",
+    "en": "Deliverance",
+    "upper": "zhen",
+    "lower": "kan",
+    "judgment": "Deliverance. The southwest furthers. If there is no longer anything where one has to go, return brings good fortune. If there is still something where one has to go, hastening brings good fortune.",
+    "image": "Thunder and rain set in. The superior man pardons mistakes and forgives misdeeds.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Without blame."
+      ],
+      [
+        "Nine in the second place",
+        "One kills three foxes in the field and receives a yellow arrow. Perseverance brings good fortune."
+      ],
+      [
+        "Six in the third place",
+        "If a man carries a burden on his back and nonetheless rides in a carriage, he thereby encourages robbers to draw near. Perseverance leads to humiliation."
+      ],
+      [
+        "Nine in the fourth place",
+        "Deliver yourself from your great toe. Then the companion comes, and him you can trust."
+      ],
+      [
+        "Six in the fifth place",
+        "If only the superior man can deliver himself, it brings good fortune. Thus he proves to inferior men that he is in earnest."
+      ],
+      [
+        "Six at the top",
+        "The prince shoots at a hawk on a high wall. He kills it. Everything serves to further."
+      ]
+    ],
+    "binary": "010100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☵",
+    "upper_name": "Thunder",
+    "lower_name": "Water"
+  },
+  {
+    "num": 41,
+    "zh": "損",
+    "en": "Decrease",
+    "upper": "gen",
+    "lower": "dui",
+    "judgment": "Decrease combined with sincerity brings about supreme good fortune without blame. One may be persevering with this. It furthers one to undertake something. How is this to be carried out? One may use two small bowls for the sacrifice.",
+    "image": "At the foot of the mountain, the lake. The superior man controls his anger and restrains his instincts.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Going quickly when one's tasks are finished is without blame. But one must reflect on how much one may decrease others."
+      ],
+      [
+        "Nine in the second place",
+        "Perseverance furthers. To undertake something brings misfortune. Without decreasing oneself, one is able to bring increase to others."
+      ],
+      [
+        "Six in the third place",
+        "When three people journey together, their number decreases by one. When one man journeys alone, he finds a companion."
+      ],
+      [
+        "Six in the fourth place",
+        "If a man decreases his faults, it makes the other hasten to come and rejoice. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "Someone does indeed increase him. Ten pairs of tortoises cannot oppose it. Supreme good fortune."
+      ],
+      [
+        "Nine at the top",
+        "If one is increased without depriving others, there is no blame. Perseverance brings good fortune. It furthers one to undertake something. One obtains servants but no longer has a separate home."
+      ]
+    ],
+    "binary": "011001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☱",
+    "upper_name": "Mountain",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 42,
+    "zh": "益",
+    "en": "Increase",
+    "upper": "xun",
+    "lower": "zhen",
+    "judgment": "Increase. It furthers one to undertake something. It furthers one to cross the great water.",
+    "image": "Wind and thunder. The superior man, when he sees good, imitates it; when he has faults, he rids himself of them.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "It furthers one to accomplish great deeds. Supreme good fortune. No blame."
+      ],
+      [
+        "Six in the second place",
+        "Someone does indeed increase him; ten pairs of tortoises cannot oppose it. Constant perseverance brings good fortune. The king presents him before God. Good fortune."
+      ],
+      [
+        "Six in the third place",
+        "One is enriched through unfortunate events. No blame, if you are sincere and walk in the middle, and report with a seal to the prince."
+      ],
+      [
+        "Six in the fourth place",
+        "If you walk in the middle and report to the prince, he will follow. It furthers one to be used in the removal of the capital."
+      ],
+      [
+        "Nine in the fifth place",
+        "If in truth you have a kind heart, ask not. Supreme good fortune. Truly, kindness will be recognized as your virtue."
+      ],
+      [
+        "Nine at the top",
+        "He brings increase to no one. Indeed, someone even strikes him. He does not keep his heart constantly steady. Misfortune."
+      ]
+    ],
+    "binary": "100110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☳",
+    "upper_name": "Wind",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 43,
+    "zh": "夬",
+    "en": "Breakthrough",
+    "upper": "dui",
+    "lower": "qian",
+    "judgment": "Breakthrough. One must resolutely make the matter known at the court of the king. It must be announced truthfully. Danger. It is necessary to notify one's own city. It does not further to resort to arms. It furthers one to undertake something.",
+    "image": "The lake has risen up to heaven. The superior man distributes riches downward and refrains from resting on his virtue.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Mighty in the forward-striding toes. When one goes and is not equal to the task, one makes a mistake."
+      ],
+      [
+        "Nine in the second place",
+        "A cry of alarm. Arms at evening and at night. Fear nothing."
+      ],
+      [
+        "Nine in the third place",
+        "To be powerful in the cheekbones brings misfortune. The superior man is firmly resolved. He walks alone and is caught in the rain. He is bespattered, and people murmur against him. No blame."
+      ],
+      [
+        "Nine in the fourth place",
+        "There is no skin on his thighs, and walking comes hard. If a man were to let himself be led like a sheep, remorse would disappear. But if these words are heard they will not be believed."
+      ],
+      [
+        "Nine in the fifth place",
+        "In dealing with weeds, firm resolution is necessary. Walking in the middle remains free of blame."
+      ],
+      [
+        "Six at the top",
+        "No cry. In the end misfortune comes."
+      ]
+    ],
+    "binary": "111011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☰",
+    "upper_name": "Lake",
+    "lower_name": "Heaven"
+  },
+  {
+    "num": 44,
+    "zh": "姤",
+    "en": "Coming to Meet",
+    "upper": "qian",
+    "lower": "xun",
+    "judgment": "Coming to Meet. The maiden is powerful. One should not marry such a maiden.",
+    "image": "Under heaven, wind. The prince acts when he promulgates his commands and makes them known to the four quarters of heaven.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "It must be checked with a brake of bronze. Perseverance brings good fortune. If one lets it take its course, one experiences misfortune. Even a lean pig has it in him to rage around."
+      ],
+      [
+        "Nine in the second place",
+        "There is a fish in the tank. No blame. Does not further guests."
+      ],
+      [
+        "Nine in the third place",
+        "There is no skin on his thighs, and walking comes hard. If one is mindful of the danger, no great mistake."
+      ],
+      [
+        "Nine in the fourth place",
+        "No fish in the tank. This leads to misfortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "A melon covered with willow leaves. Hidden lines. Then it drops down to one from heaven."
+      ],
+      [
+        "Nine at the top",
+        "He comes to meet with his horns. Humiliation. No blame."
+      ]
+    ],
+    "binary": "110111",
+    "upper_symbol": "☰",
+    "lower_symbol": "☴",
+    "upper_name": "Heaven",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 45,
+    "zh": "萃",
+    "en": "Gathering Together",
+    "upper": "dui",
+    "lower": "kun",
+    "judgment": "Gathering Together. Success. The king approaches his temple. It furthers one to see the great man. This brings success. Perseverance furthers. To bring great offerings creates good fortune. It furthers one to undertake something.",
+    "image": "Over the earth, the lake. The superior man renews his weapons in order to meet the unforeseen.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "If you are sincere, but not to the end, there will sometimes be confusion, sometimes gathering together. If you call out, then after one grasp of the hand you can laugh again. Regret not. Going is without blame."
+      ],
+      [
+        "Six in the second place",
+        "Letting oneself be drawn brings good fortune and remains blameless. If one is sincere, it furthers one to bring even a small offering."
+      ],
+      [
+        "Six in the third place",
+        "Gathering together amid sighs. Nothing that would further. Going is without blame. Slight humiliation."
+      ],
+      [
+        "Nine in the fourth place",
+        "Great good fortune. No blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "If in gathering together one has position, this brings no blame. If there are some who are not yet sincerely in the work, sublime and enduring perseverance is needed. Then remorse disappears."
+      ],
+      [
+        "Six at the top",
+        "Lamenting and sighing, floods of tears. No blame."
+      ]
+    ],
+    "binary": "000011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☷",
+    "upper_name": "Lake",
+    "lower_name": "Earth"
+  },
+  {
+    "num": 46,
+    "zh": "升",
+    "en": "Pushing Upward",
+    "upper": "kun",
+    "lower": "xun",
+    "judgment": "Pushing Upward has supreme success. One must see the great man. Fear not. Departure toward the south brings good fortune.",
+    "image": "Within the earth, wood grows. The superior man of devoted character heaps up small things in order to achieve something high and great.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Pushing upward that meets with confidence brings great good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "If one is sincere, it furthers one to bring even a small offering. No blame."
+      ],
+      [
+        "Nine in the third place",
+        "One pushes upward into an empty city."
+      ],
+      [
+        "Six in the fourth place",
+        "The king offers him Mount Chi. Good fortune. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "Perseverance brings good fortune. One pushes upward by steps."
+      ],
+      [
+        "Six at the top",
+        "Pushing upward in darkness. It furthers one to be unremittingly persevering."
+      ]
+    ],
+    "binary": "110000",
+    "upper_symbol": "☷",
+    "lower_symbol": "☴",
+    "upper_name": "Earth",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 47,
+    "zh": "困",
+    "en": "Oppression",
+    "upper": "dui",
+    "lower": "kan",
+    "judgment": "Oppression. Success. Perseverance. The great man brings about good fortune. No blame. When one has something to say, it is not believed.",
+    "image": "There is no water in the lake. The superior man stakes his life on following his will.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "One sits oppressed under a bare tree and strays into a gloomy valley. For three years one sees nothing."
+      ],
+      [
+        "Nine in the second place",
+        "One is oppressed while at meat and drink. The man with the scarlet knee bands is just coming. It furthers one to offer sacrifice. To set forth brings misfortune. No blame."
+      ],
+      [
+        "Six in the third place",
+        "A man permits himself to be oppressed by stone, and leans on thorns and thistles. He enters his house and does not see his wife. Misfortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "He comes very quietly, oppressed in a golden carriage. Humiliation, but the end is reached."
+      ],
+      [
+        "Nine in the fifth place",
+        "His nose and feet are cut off. Oppression at the hands of the man with the purple knee bands. Joy comes softly. It furthers one to offer sacrifice and libation."
+      ],
+      [
+        "Six at the top",
+        "He is oppressed by creeping vines. He moves uncertainly and says, 'Movement brings remorse.' If one feels remorse over this and makes a start, good fortune comes."
+      ]
+    ],
+    "binary": "010011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☵",
+    "upper_name": "Lake",
+    "lower_name": "Water"
+  },
+  {
+    "num": 48,
+    "zh": "井",
+    "en": "The Well",
+    "upper": "kan",
+    "lower": "xun",
+    "judgment": "The Well. The town may be changed, but the well cannot be changed. It neither decreases nor increases. They come and go and draw from the well. If one gets down almost to the water and the rope does not go all the way, or the jug breaks, it brings misfortune.",
+    "image": "Water over wood. The superior man encourages the people at their work, and exhorts them to help one another.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "One does not drink the mud of the well. No animals come to an old well."
+      ],
+      [
+        "Nine in the second place",
+        "At the well-hole one shoots fishes. The jug is broken and leaks."
+      ],
+      [
+        "Nine in the third place",
+        "The well is cleaned, but no one drinks from it. This is my heart's sorrow, for one might draw from it. If the king were clear-minded, good fortune might be enjoyed in common."
+      ],
+      [
+        "Six in the fourth place",
+        "The well is being lined. No blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "In the well there is a clear, cold spring from which one can drink."
+      ],
+      [
+        "Six at the top",
+        "The well is there to be drawn from. No covering. Supreme good fortune. Confidence."
+      ]
+    ],
+    "binary": "110010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☴",
+    "upper_name": "Water",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 49,
+    "zh": "革",
+    "en": "Revolution",
+    "upper": "dui",
+    "lower": "li",
+    "judgment": "Revolution. On your own day you are believed. Supreme success, furthering through perseverance. Remorse disappears.",
+    "image": "Fire in the lake. The superior man sets the calendar in order and makes the seasons clear.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Wrapped in the hide of a yellow cow."
+      ],
+      [
+        "Six in the second place",
+        "When one's own day comes, one may create revolution. Starting brings good fortune. No blame."
+      ],
+      [
+        "Nine in the third place",
+        "Starting brings misfortune. Perseverance brings danger. When talk of revolution has gone the rounds three times, one may commit oneself, and men will believe him."
+      ],
+      [
+        "Nine in the fourth place",
+        "Remorse disappears. Men believe him. Changing the form of government brings good fortune."
+      ],
+      [
+        "Nine in the fifth place",
+        "The great man changes like a tiger. Even before he questions the oracle he is believed."
+      ],
+      [
+        "Six at the top",
+        "The superior man changes like a panther. The inferior man molts in the face. Starting brings misfortune. To remain persevering brings good fortune."
+      ]
+    ],
+    "binary": "101011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☲",
+    "upper_name": "Lake",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 50,
+    "zh": "鼎",
+    "en": "The Cauldron",
+    "upper": "li",
+    "lower": "xun",
+    "judgment": "The Cauldron. Supreme good fortune. Success.",
+    "image": "Fire over wood. The superior man consolidates his fate by making his position correct.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "A ting with legs upturned furthers removal of stagnating stuff. One takes a concubine for the sake of her son. No blame."
+      ],
+      [
+        "Nine in the second place",
+        "There is food in the ting. My comrades are envious, but they cannot harm me. Good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "The handle of the ting is altered. One is impeded in his way of life. The fat of the pheasant is not eaten. Once rain falls, remorse is spent. Good fortune comes in the end."
+      ],
+      [
+        "Nine in the fourth place",
+        "The legs of the ting are broken. The prince's meal is spilled and his person is soiled. Misfortune."
+      ],
+      [
+        "Six in the fifth place",
+        "The ting has yellow handles, golden carrying rings. Perseverance furthers."
+      ],
+      [
+        "Nine at the top",
+        "The ting has rings of jade. Great good fortune. Nothing that would not act to further."
+      ]
+    ],
+    "binary": "110101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☴",
+    "upper_name": "Fire",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 51,
+    "zh": "震",
+    "en": "The Arousing",
+    "upper": "zhen",
+    "lower": "zhen",
+    "judgment": "The Arousing. Success. Shock comes—oh, oh! Laughing words—ha, ha! The shock terrifies for a hundred miles, and he does not let fall the sacrificial spoon and chalice.",
+    "image": "Thunder repeated. The superior man, in fear and trembling, sets his life in order and examines himself.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Shock comes—oh, oh! Then follow laughing words—ha, ha! Good fortune."
+      ],
+      [
+        "Six in the second place",
+        "Shock comes bringing danger. A hundred thousand times you lose your treasures and must climb the nine hills. Do not go in pursuit of them. After seven days you will get them back again."
+      ],
+      [
+        "Six in the third place",
+        "Shock comes and makes one distraught. If shock spurs to action one remains free of misfortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "Shock is mired."
+      ],
+      [
+        "Six in the fifth place",
+        "Shock goes hither and thither. Danger. However, nothing at all is lost. Yet there are things to be done."
+      ],
+      [
+        "Six at the top",
+        "Shock brings ruin and terrified gazing around. Going ahead brings misfortune. If it has not yet touched one's own body but has reached one's neighbor first, there is no blame. One's comrades have cause for talk."
+      ]
+    ],
+    "binary": "100100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☳",
+    "upper_name": "Thunder",
+    "lower_name": "Thunder"
+  },
+  {
+    "num": 52,
+    "zh": "艮",
+    "en": "Keeping Still",
+    "upper": "gen",
+    "lower": "gen",
+    "judgment": "Keeping Still. Keeping his back still so that he no longer feels his body. He goes into his courtyard and does not see his people. No blame.",
+    "image": "Mountains standing close together. The superior man does not permit his thoughts to go beyond his situation.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "Keeping his toes still. No blame. Continued perseverance furthers."
+      ],
+      [
+        "Six in the second place",
+        "Keeping his calves still. He cannot rescue him whom he follows. His heart is not glad."
+      ],
+      [
+        "Nine in the third place",
+        "Keeping his hips still. Making his sacrum stiff. Dangerous. The heart suffocates."
+      ],
+      [
+        "Six in the fourth place",
+        "Keeping his trunk still. No blame."
+      ],
+      [
+        "Six in the fifth place",
+        "Keeping his jaws still. The words are well-ordered. Remorse disappears."
+      ],
+      [
+        "Nine at the top",
+        "Noblehearted keeping still. Good fortune."
+      ]
+    ],
+    "binary": "001001",
+    "upper_symbol": "☶",
+    "lower_symbol": "☶",
+    "upper_name": "Mountain",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 53,
+    "zh": "漸",
+    "en": "Development",
+    "upper": "xun",
+    "lower": "gen",
+    "judgment": "Development. The maiden is given in marriage. Good fortune. Perseverance furthers.",
+    "image": "On the mountain, a tree. The superior man abides in dignity and virtue, in order to improve the mores.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "The wild goose gradually draws near the shore. The young son is in danger. There is talk. No blame."
+      ],
+      [
+        "Six in the second place",
+        "The wild goose gradually draws near the cliff. Eating and drinking in peace and concord. Good fortune."
+      ],
+      [
+        "Nine in the third place",
+        "The wild goose gradually draws near the plateau. The man goes forth and does not return. The woman carries a child but does not bring it forth. Misfortune. It furthers one to fight off robbers."
+      ],
+      [
+        "Six in the fourth place",
+        "The wild goose gradually draws near the tree. Perhaps it will find a flat branch. No blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "The wild goose gradually draws near the summit. For three years the woman has no child. In the end nothing can hinder her. Good fortune."
+      ],
+      [
+        "Six at the top",
+        "The wild goose gradually draws near the clouds. Its feathers can be used for the sacred dance. Good fortune."
+      ]
+    ],
+    "binary": "001110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☶",
+    "upper_name": "Wind",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 54,
+    "zh": "歸妹",
+    "en": "The Marrying Maiden",
+    "upper": "zhen",
+    "lower": "dui",
+    "judgment": "The Marrying Maiden. Undertakings bring misfortune. Nothing that would further.",
+    "image": "Thunder over the lake. The superior man understands the transitory in the light of the eternity of the end.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "The marrying maiden as a concubine. A lame man who is able to tread. Undertakings bring good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "A one-eyed man who is able to see. The perseverance of a solitary man furthers."
+      ],
+      [
+        "Six in the third place",
+        "The marrying maiden as a slave. She marries as a concubine."
+      ],
+      [
+        "Nine in the fourth place",
+        "The marrying maiden draws out the allotted time. A late marriage comes in due course."
+      ],
+      [
+        "Six in the fifth place",
+        "The sovereign I gave his daughter in marriage. The embroidered garments of the princess were not as gorgeous as those of the servingmaid. The moon that is nearly full brings good fortune."
+      ],
+      [
+        "Six at the top",
+        "The woman holds the basket, but there are no fruits in it. The man stabs the sheep, but no blood flows. Nothing that acts to further."
+      ]
+    ],
+    "binary": "011100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☱",
+    "upper_name": "Thunder",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 55,
+    "zh": "豐",
+    "en": "Abundance",
+    "upper": "zhen",
+    "lower": "li",
+    "judgment": "Abundance has success. The king attains abundance. Be not sad. Be like the sun at midday.",
+    "image": "Both thunder and lightning come. The superior man decides lawsuits and carries out punishments.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "When a man meets his destined ruler, they can be together ten days, and it is not a mistake. Going meets with recognition."
+      ],
+      [
+        "Six in the second place",
+        "The curtain is of such fullness that the polestars can be seen at noon. Through going one meets with mistrust and hate. If one rouses him through truth, good fortune comes."
+      ],
+      [
+        "Nine in the third place",
+        "The underbrush is of such abundance that the small stars can be seen at noon. He breaks his right arm. No blame."
+      ],
+      [
+        "Nine in the fourth place",
+        "The curtain is of such fullness that the polestars can be seen at noon. He meets his ruler, who is of like kind. Good fortune."
+      ],
+      [
+        "Six in the fifth place",
+        "Lines are coming, blessing and fame draw near. Good fortune."
+      ],
+      [
+        "Six at the top",
+        "His house is in a state of abundance. He screens off his family. He peers through the gate and no longer perceives anyone. For three years he sees nothing. Misfortune."
+      ]
+    ],
+    "binary": "101100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☲",
+    "upper_name": "Thunder",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 56,
+    "zh": "旅",
+    "en": "The Wanderer",
+    "upper": "li",
+    "lower": "gen",
+    "judgment": "The Wanderer. Success through smallness. Perseverance brings good fortune to the wanderer.",
+    "image": "Fire on the mountain. The superior man is clear-minded and cautious in imposing penalties, and protracts no lawsuits.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "If the wanderer busies himself with trivial things, he draws down misfortune upon himself."
+      ],
+      [
+        "Six in the second place",
+        "The wanderer comes to an inn. He has his property with him. He wins the steadfastness of a young servant."
+      ],
+      [
+        "Nine in the third place",
+        "The wanderer's inn burns down. He loses the steadfastness of his young servant. Danger."
+      ],
+      [
+        "Nine in the fourth place",
+        "The wanderer rests in a shelter. He obtains his property and an ax. My heart is not glad."
+      ],
+      [
+        "Six in the fifth place",
+        "He shoots a pheasant. It drops with the first arrow. In the end this brings both praise and office."
+      ],
+      [
+        "Nine at the top",
+        "The bird's nest burns up. The wanderer laughs at first, then must needs lament and weep. Through carelessness he loses his cow. Misfortune."
+      ]
+    ],
+    "binary": "001101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☶",
+    "upper_name": "Fire",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 57,
+    "zh": "巽",
+    "en": "The Gentle",
+    "upper": "xun",
+    "lower": "xun",
+    "judgment": "The Gentle. Success through what is small. It furthers one to have somewhere to go. It furthers one to see the great man.",
+    "image": "Winds following one upon the other. The superior man spreads his commands abroad and carries out his undertakings.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "In advancing and in retreating, the perseverance of a warrior furthers."
+      ],
+      [
+        "Nine in the second place",
+        "Penetration under the bed. Priests and magicians are used in great number. Good fortune. No blame."
+      ],
+      [
+        "Nine in the third place",
+        "Repeated penetration. Humiliation."
+      ],
+      [
+        "Six in the fourth place",
+        "Remorse vanishes. During the hunt three kinds of game are caught."
+      ],
+      [
+        "Nine in the fifth place",
+        "Perseverance brings good fortune. Remorse vanishes. Nothing that does not further. No beginning, but an end. Before the change, three days. After the change, three days. Good fortune."
+      ],
+      [
+        "Nine at the top",
+        "Penetration under the bed. He loses his property and his ax. Perseverance brings misfortune."
+      ]
+    ],
+    "binary": "110110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☴",
+    "upper_name": "Wind",
+    "lower_name": "Wind"
+  },
+  {
+    "num": 58,
+    "zh": "兌",
+    "en": "The Joyous",
+    "upper": "dui",
+    "lower": "dui",
+    "judgment": "The Joyous. Success. Perseverance is favorable.",
+    "image": "Lakes resting one on the other. The superior man joins with his friends for discussion and practice.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Contented joyousness. Good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "Sincere joyousness. Good fortune. Remorse disappears."
+      ],
+      [
+        "Six in the third place",
+        "Coming joyousness. Misfortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "Joyousness that is weighed is not at peace. After ridding himself of mistakes a man has joy."
+      ],
+      [
+        "Nine in the fifth place",
+        "Sincerity toward disintegrating influences is dangerous."
+      ],
+      [
+        "Six at the top",
+        "Seductive joyousness."
+      ]
+    ],
+    "binary": "011011",
+    "upper_symbol": "☱",
+    "lower_symbol": "☱",
+    "upper_name": "Lake",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 59,
+    "zh": "渙",
+    "en": "Dispersion",
+    "upper": "xun",
+    "lower": "kan",
+    "judgment": "Dispersion. Success. The king approaches his temple. It furthers one to cross the great water. Perseverance furthers.",
+    "image": "The wind drives over the water. The kings of old sacrificed to the Lord and built temples.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "He brings help with the strength of a horse. Good fortune."
+      ],
+      [
+        "Nine in the second place",
+        "At the dissolution he hurries to that which supports him. Remorse disappears."
+      ],
+      [
+        "Six in the third place",
+        "He dissolves his self. No remorse."
+      ],
+      [
+        "Six in the fourth place",
+        "He dissolves his bond with his group. Supreme good fortune. Dispersion leads in turn to accumulation. This is something that ordinary men do not think of."
+      ],
+      [
+        "Nine in the fifth place",
+        "His loud cries are as dissolving as sweat. Dissolution! A king abides without blame."
+      ],
+      [
+        "Nine at the top",
+        "He dissolves his blood. Departing, keeping at a distance, going out, is without blame."
+      ]
+    ],
+    "binary": "010110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☵",
+    "upper_name": "Wind",
+    "lower_name": "Water"
+  },
+  {
+    "num": 60,
+    "zh": "節",
+    "en": "Limitation",
+    "upper": "kan",
+    "lower": "dui",
+    "judgment": "Limitation. Success. Galling limitation must not be persevered in.",
+    "image": "Water over lake. The superior man creates number and measure, and examines the nature of virtue and correct conduct.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Not going out of the door and the courtyard is without blame."
+      ],
+      [
+        "Nine in the second place",
+        "Not going out of the gate and the courtyard brings misfortune."
+      ],
+      [
+        "Six in the third place",
+        "He who knows no limitation will have cause to lament. No blame."
+      ],
+      [
+        "Six in the fourth place",
+        "Contented limitation. Success."
+      ],
+      [
+        "Nine in the fifth place",
+        "Sweet limitation brings good fortune. Going brings esteem."
+      ],
+      [
+        "Six at the top",
+        "Galling limitation. Perseverance brings misfortune. Remorse disappears."
+      ]
+    ],
+    "binary": "011010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☱",
+    "upper_name": "Water",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 61,
+    "zh": "中孚",
+    "en": "Inner Truth",
+    "upper": "xun",
+    "lower": "dui",
+    "judgment": "Inner Truth. Pigs and fishes. Good fortune. It furthers one to cross the great water. Perseverance furthers.",
+    "image": "Wind over lake. The superior man discusses criminal cases in order to delay executions.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "Being prepared brings good fortune. If there are secret designs, it is disquieting."
+      ],
+      [
+        "Nine in the second place",
+        "A crane calling in the shade. Its young answers it. I have a good goblet. I will share it with you."
+      ],
+      [
+        "Six in the third place",
+        "He finds a comrade. Now he beats the drum, now he stops. Now he sobs, now he sings."
+      ],
+      [
+        "Six in the fourth place",
+        "The moon nearly at the full. The team horse goes astray. No blame."
+      ],
+      [
+        "Nine in the fifth place",
+        "He possesses truth, which links together. No blame."
+      ],
+      [
+        "Nine at the top",
+        "Cockcrow penetrating to heaven. Perseverance brings misfortune."
+      ]
+    ],
+    "binary": "011110",
+    "upper_symbol": "☴",
+    "lower_symbol": "☱",
+    "upper_name": "Wind",
+    "lower_name": "Lake"
+  },
+  {
+    "num": 62,
+    "zh": "小過",
+    "en": "Preponderance of the Small",
+    "upper": "zhen",
+    "lower": "gen",
+    "judgment": "Preponderance of the Small. Success. Perseverance furthers. Small things may be done; great things should not be done. The flying bird brings the message: it is not well to strive upward, it is well to remain below. Great good fortune.",
+    "image": "Thunder on the mountain. The superior man in all his conduct gives preponderance to reverence. In bereavement he gives preponderance to grief. In his expenditures he gives preponderance to thrift.",
+    "lines": [
+      [
+        "Six at the beginning",
+        "The bird meets with misfortune through flying."
+      ],
+      [
+        "Six in the second place",
+        "She passes by her ancestor and meets her ancestress. He does not reach his prince and meets the official. No blame."
+      ],
+      [
+        "Nine in the third place",
+        "If one is not extremely careful, somebody may come up from behind and strike him. Misfortune."
+      ],
+      [
+        "Nine in the fourth place",
+        "No blame. He meets him without passing by. Going brings danger. One must be on guard. Do not act. Be constantly persevering."
+      ],
+      [
+        "Six in the fifth place",
+        "Dense clouds, no rain from our western territory. The prince shoots and hits him who is in the cave."
+      ],
+      [
+        "Six at the top",
+        "He passes by, not meeting him. The flying bird leaves him. Misfortune. This means bad luck and injury."
+      ]
+    ],
+    "binary": "001100",
+    "upper_symbol": "☳",
+    "lower_symbol": "☶",
+    "upper_name": "Thunder",
+    "lower_name": "Mountain"
+  },
+  {
+    "num": 63,
+    "zh": "既濟",
+    "en": "After Completion",
+    "upper": "kan",
+    "lower": "li",
+    "judgment": "After Completion. Success in small matters. Perseverance furthers. At the beginning good fortune, at the end disorder.",
+    "image": "Water over fire. The superior man takes thought of misfortune and arms himself against it in advance.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "He brakes his wheels. He gets his tail in the water. No blame."
+      ],
+      [
+        "Six in the second place",
+        "The woman loses the curtain of her carriage. Do not run after it; on the seventh day you will get it back."
+      ],
+      [
+        "Nine in the third place",
+        "The Illustrious Ancestor disciplines the Devil's Country. After three years he conquers it. Inferior people must not be employed."
+      ],
+      [
+        "Six in the fourth place",
+        "The finest clothes turn to rags. Be careful all day long."
+      ],
+      [
+        "Nine in the fifth place",
+        "The neighbor in the east who slaughters an ox does not attain as much real happiness as the neighbor in the west with his small offering."
+      ],
+      [
+        "Six at the top",
+        "He gets his head in the water. Danger."
+      ]
+    ],
+    "binary": "101010",
+    "upper_symbol": "☵",
+    "lower_symbol": "☲",
+    "upper_name": "Water",
+    "lower_name": "Fire"
+  },
+  {
+    "num": 64,
+    "zh": "未濟",
+    "en": "Before Completion",
+    "upper": "li",
+    "lower": "kan",
+    "judgment": "Before Completion. Success. But if the little fox, after nearly completing the crossing, gets his tail in the water, there is nothing that would further.",
+    "image": "Fire over water. The superior man is careful in the differentiation of things, so that each finds its place.",
+    "lines": [
+      [
+        "Nine at the beginning",
+        "He gets his tail in the water. Humiliation."
+      ],
+      [
+        "Nine in the second place",
+        "He brakes his wheels. Perseverance brings good fortune."
+      ],
+      [
+        "Six in the third place",
+        "Before completion, attack brings misfortune. It furthers one to cross the great water."
+      ],
+      [
+        "Nine in the fourth place",
+        "Perseverance brings good fortune. Remorse disappears. Shock, thus to discipline the Devil's Country. For three years, great realms are awarded."
+      ],
+      [
+        "Six in the fifth place",
+        "Perseverance brings good fortune. No remorse. The light of the superior man is true. Good fortune."
+      ],
+      [
+        "Nine at the top",
+        "There is drinking of wine in genuine confidence. No blame. But if one wets his head, he loses it, in truth."
+      ]
+    ],
+    "binary": "010101",
+    "upper_symbol": "☲",
+    "lower_symbol": "☵",
+    "upper_name": "Fire",
+    "lower_name": "Water"
+  }
+]
