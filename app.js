@@ -890,6 +890,12 @@ document.getElementById('yj-toss-btn').addEventListener('click', async () => {
   const coinEls = coinIds.map(id => document.getElementById(id));
   const values = [tossCoin(), tossCoin(), tossCoin()];
 
+  // Reset coin faces before flip
+  coinEls.forEach(c => {
+    c.className = 'yj-coin';
+    c.querySelector('.yj-coin-face').textContent = '☯';
+  });
+
   // Start flip animation
   coinEls.forEach(c => c.classList.add('flipping'));
 
@@ -914,14 +920,8 @@ document.getElementById('yj-toss-btn').addEventListener('click', async () => {
   if (yjCurrentLine < 6) {
     document.getElementById('yj-toss-label').textContent =
       `Tap the coins to cast line ${yjCurrentLine + 1}`;
-    // Reset coins after brief pause
-    setTimeout(() => {
-      coinEls.forEach(c => {
-        c.className = 'yj-coin';
-        c.querySelector('.yj-coin-face').textContent = '☯';
-      });
-      btn.disabled = false;
-    }, 600);
+    // Leave coins visible — they reset at the start of the next toss
+    btn.disabled = false;
   } else {
     document.getElementById('yj-toss-label').textContent = 'Hexagram complete';
     setTimeout(() => showReading(), 700);
@@ -949,31 +949,33 @@ function showReading() {
     secondaryHex = getHexByBinary(secondaryBin);
   }
 
-  // Render hexagram display cards
+  // Render mini hexagram symbols in header cards
   renderMiniHex('primary', primaryHex, yjLines, false);
   if (secondaryHex) {
     renderMiniHex('secondary', secondaryHex, yjLines, true);
-    document.getElementById('yj-secondary-card').classList.remove('hidden');
+    document.getElementById('yj-secondary-card').style.visibility = 'visible';
     document.getElementById('yj-transform-arrow').style.display = '';
   } else {
-    document.getElementById('yj-secondary-card').classList.add('hidden');
     document.getElementById('yj-transform-arrow').style.display = 'none';
+    // Show empty placeholder so layout is stable
   }
 
-  // Build content sections — revealed step by step
+  // Two-column content
   const content = document.getElementById('yj-content');
   content.innerHTML = '';
 
-  // 1. Primary hexagram
-  addSection(content, `${primaryHex.num}. ${primaryHex.en} (${primaryHex.zh})`, null, 'heading');
-  addSection(content, 'Judgment', primaryHex.judgment);
-  addSection(content, 'Image', primaryHex.image);
+  const cols = document.createElement('div');
+  cols.className = 'yj-two-col';
 
-  // 2. Changing lines (collapsible)
-  const changingLines = yjLines
-    .map((v, i) => ({ v, i }))
-    .filter(({ v }) => isMoving(v));
+  // Left column: primary
+  const leftCol = document.createElement('div');
+  leftCol.className = 'yj-col';
+  addSection(leftCol, `${primaryHex.num}. ${primaryHex.en}`, primaryHex.zh, 'heading');
+  addSection(leftCol, 'Judgment', primaryHex.judgment);
+  addSection(leftCol, 'Image', primaryHex.image);
 
+  // Changing lines in left column
+  const changingLines = yjLines.map((v, i) => ({ v, i })).filter(({ v }) => isMoving(v));
   if (changingLines.length > 0) {
     const sec = document.createElement('div');
     sec.className = 'yj-section';
@@ -981,8 +983,7 @@ function showReading() {
     title.className = 'yj-section-title';
     title.textContent = 'Changing Lines';
     sec.appendChild(title);
-
-    changingLines.forEach(({ v, i }) => {
+    changingLines.forEach(({ i }) => {
       const lineData = primaryHex.lines[i];
       const row = document.createElement('div');
       row.className = 'yj-changing-line';
@@ -995,17 +996,24 @@ function showReading() {
       row.addEventListener('click', () => row.classList.toggle('open'));
       sec.appendChild(row);
     });
-    content.appendChild(sec);
+    leftCol.appendChild(sec);
   }
 
-  // 3. Transformed hexagram
+  cols.appendChild(leftCol);
+
+  // Right column: secondary (or stable note)
+  const rightCol = document.createElement('div');
+  rightCol.className = 'yj-col';
   if (secondaryHex) {
-    addSection(content, `Transforms to: ${secondaryHex.num}. ${secondaryHex.en} (${secondaryHex.zh})`, null, 'heading');
-    addSection(content, 'Judgment', secondaryHex.judgment);
-    addSection(content, 'Image', secondaryHex.image);
+    addSection(rightCol, `${secondaryHex.num}. ${secondaryHex.en}`, secondaryHex.zh, 'heading');
+    addSection(rightCol, 'Judgment', secondaryHex.judgment);
+    addSection(rightCol, 'Image', secondaryHex.image);
   } else {
-    addSection(content, 'No changing lines', 'The hexagram is stable — no transformation.', null);
+    addSection(rightCol, 'Stable', 'No changing lines. The hexagram requires no transformation.', null);
   }
+  cols.appendChild(rightCol);
+
+  content.appendChild(cols);
 
   document.getElementById('yj-casting').classList.add('hidden');
   document.getElementById('yj-reading').classList.remove('hidden');
@@ -1014,25 +1022,14 @@ function showReading() {
 function addSection(parent, title, text, type) {
   const sec = document.createElement('div');
   sec.className = 'yj-section';
-  if (type === 'heading') {
-    const t = document.createElement('div');
-    t.className = 'yj-section-title';
-    t.textContent = title;
-    sec.appendChild(t);
-    if (text) {
-      const p = document.createElement('div');
-      p.className = 'yj-section-text';
-      p.textContent = text;
-      sec.appendChild(p);
-    }
-  } else {
-    const t = document.createElement('div');
-    t.className = 'yj-section-title';
-    t.textContent = title;
+  const t = document.createElement('div');
+  t.className = type === 'heading' ? 'yj-section-title' : 'yj-section-label';
+  t.textContent = title;
+  sec.appendChild(t);
+  if (text) {
     const p = document.createElement('div');
-    p.className = 'yj-section-text';
+    p.className = type === 'heading' ? 'yj-hex-zh-inline' : 'yj-section-text';
     p.textContent = text;
-    sec.appendChild(t);
     sec.appendChild(p);
   }
   parent.appendChild(sec);
