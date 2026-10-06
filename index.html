@@ -154,11 +154,77 @@
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
       <span>TTS</span>
     </button>
+    <button class="nav-item" data-view="oracle">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <span>Oracle</span>
+    </button>
     <button class="nav-item" data-view="whack">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="17" rx="7" ry="3"/><path d="M5 17V9a7 4 0 0 1 14 0v8"/><circle cx="12" cy="8" r="2"/></svg>
       <span>Whack</span>
     </button>
   </nav>
+
+
+  <!-- ORACLE -->
+  <section id="view-oracle" class="view">
+    <header class="top-bar">
+      <span class="view-title">Oracle</span>
+      <div class="tts-method-toggle">
+        <button class="oracle-method-btn active" data-oracle="yijing">Yi Jing</button>
+        <button class="oracle-method-btn" data-oracle="tarot" disabled style="opacity:0.4">Tarot</button>
+      </div>
+    </header>
+
+    <div id="oracle-yijing" class="oracle-panel">
+
+      <!-- Phase: casting -->
+      <div id="yj-casting" class="yj-phase">
+        <div id="yj-hexagram-build" class="yj-hex-build">
+          <div class="yj-hex-preview" id="yj-hex-preview">
+            <div class="yj-line-slot" id="yj-slot-5"></div>
+            <div class="yj-line-slot" id="yj-slot-4"></div>
+            <div class="yj-line-slot" id="yj-slot-3"></div>
+            <div class="yj-line-slot" id="yj-slot-2"></div>
+            <div class="yj-line-slot" id="yj-slot-1"></div>
+            <div class="yj-line-slot" id="yj-slot-0"></div>
+          </div>
+          <div class="yj-toss-label" id="yj-toss-label">Tap the coins to cast line 1</div>
+        </div>
+        <div class="yj-coins-area">
+          <div class="yj-coin-row" id="yj-coins">
+            <div class="yj-coin" id="yj-coin-0"><span class="yj-coin-face">☯</span></div>
+            <div class="yj-coin" id="yj-coin-1"><span class="yj-coin-face">☯</span></div>
+            <div class="yj-coin" id="yj-coin-2"><span class="yj-coin-face">☯</span></div>
+          </div>
+          <button id="yj-toss-btn" class="yj-toss-btn">Toss coins</button>
+        </div>
+      </div>
+
+      <!-- Phase: reading -->
+      <div id="yj-reading" class="yj-phase hidden">
+        <div id="yj-hexagrams-display" class="yj-hexagrams-display">
+          <div class="yj-hex-card" id="yj-primary-card">
+            <div class="yj-hex-lines" id="yj-primary-lines"></div>
+            <div class="yj-hex-name" id="yj-primary-name"></div>
+            <div class="yj-hex-zh" id="yj-primary-zh"></div>
+          </div>
+          <div class="yj-arrow" id="yj-transform-arrow" style="display:none">→</div>
+          <div class="yj-hex-card hidden" id="yj-secondary-card">
+            <div class="yj-hex-lines" id="yj-secondary-lines"></div>
+            <div class="yj-hex-name" id="yj-secondary-name"></div>
+            <div class="yj-hex-zh" id="yj-secondary-zh"></div>
+          </div>
+        </div>
+
+        <div id="yj-content" class="yj-content"></div>
+
+        <div class="yj-actions">
+          <button id="yj-new-btn" class="btn-secondary yj-new-btn">New reading</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- WHACK-A-MOLE -->
   <section id="view-whack" class="view">
